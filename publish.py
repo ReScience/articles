@@ -12,8 +12,9 @@ import os.path
 import requests
 from article import Article
 
+
 def upload_content(server, token, article_id, filename):
-    """ Upload content to server """
+    """ Upload content to the server """
         
     data = {'filename': filename}
     files = {'file': open(filename, 'rb')}
@@ -25,10 +26,9 @@ def upload_content(server, token, article_id, filename):
 
     
 def update_metadata(server, token, article_id, article):
-    """ Upload content metadata to server """
+    """ Upload metadata to the server """
 
-
-    # ! Any empty entry will ake the upload to fail with a cryptic error message
+    # Any empty entry will make the upload to fail with a cryptic error message
     
     headers = {"Content-Type": "application/json"}
     url = 'https://%s/api/deposit/depositions/%s' % (server, article_id)
@@ -45,30 +45,44 @@ def update_metadata(server, token, article_id, article):
             'license' : 'cc-by',
             'keywords' : article.keywords.split(),
             'contributors' : [
-                {'name': article.editors[0].name, 'type': 'Editor' },
-                {'name': article.reviewers[0].name, 'type': 'Other' },
-                {'name': article.reviewers[1].name, 'type': 'Other' }
+#                {'name': article.editors[0].name, 'type': 'Editor' },
+#                {'name': article.reviewers[0].name, 'type': 'Other' },
+#                {'name': article.reviewers[1].name, 'type': 'Other' }
             ],
             'related_identifiers' : [
+#                  
 #                {'relation': 'isSupplementedBy', 'identifier': article.code.doi},
 #                {'relation': 'cites',     'identifier': article.replication.doi}
             ],
             'journal_title' : "ReScience C",
             'journal_volume' : "%s" % article.journal_volume,
             'journal_issue' : "%s" % article.journal_issue,
-            'journal_pages' : "%s" % article.article_number,
-            'communities' : [{'identifier': 'rescience'}],
+            'journal_pages' : "#%s" % article.article_number,
+# communities (rescience) will be populated for actual server only
+            'communities' : [], 
         }
     }
 
     if article.type in ["replication", "Replication"]:
         if article.code.doi is not None:
-            data['related_identifiers'].append(
+            data['metadata']['related_identifiers'].append(
                 {'relation': 'isSupplementedBy', 'identifier': article.code.doi})
         if article.replication.doi is not None:
-            data['related_identifiers'].append(
+            data['metadata']['related_identifiers'].append(
                 {'relation': 'cites',     'identifier': article.replication.doi})
-    
+
+    if server == "zenodo.org":
+        data['metadata']["communities"].append({'identifier': 'rescience'})
+    if len(article.editors) > 0:
+        data['metadata']['contributors'].append(
+            {'name': article.editors[0].name, 'type': 'Editor' } )
+    if len(article.editors) > 0 and len(article.reviewers[0].name) > 0:
+        data['metadata']['contributors'].append(
+            {'name': article.reviewers[0].name, 'type': 'Other' } )
+    if len(article.editors) > 1 and len(article.reviewers[1].name) > 0:
+        data['metadata']['contributors'].append(
+            {'name': article.reviewers[1].name, 'type': 'Other' } )
+            
     response = requests.put(url, params={'access_token': token},
                             data=json.dumps(data),  headers=headers)
     if response.status_code != 200:
@@ -77,7 +91,7 @@ def update_metadata(server, token, article_id, article):
 
     
 def publish(server, token, article_id):
-    """ Publish entry """
+    """ Make entry public (DANGER ZONE) """
     
     url = 'https://%s/api/deposit/depositions/%s/actions/publish' % (server, article_id)
     response = requests.post(url, params={'access_token': token})
@@ -85,6 +99,37 @@ def publish(server, token, article_id):
         raise IOError("%s: " % response.status_code +
                       response.json()["message"])
 
+    
+def git_branch(metadata_file, article_file, article_doi):
+    """
+    Create a git branch to store the file and the metadata in a dedicated
+    directory.
+    """
+    
+    # Create a new local directory containing article and metadata
+    # This is done in a new branch
+    branch = article_doi.replace('/','_')
+    directory = branch
+    src_pdf = article_file
+    dst_pdf = os.path.join(directory, "article.pdf")
+    src_yaml = metadata_file
+    dst_yaml = os.path.join(directory, "article.yaml")
+    src_bib = metadata_file
+    dst_bib = os.path.join(directory, "article.bib")
+    os.system("git stash")
+    os.system("git checkout -b {0}".format(branch))
+    os.system("mkdir {0}".format(directory))
+    os.system("cp {0} {1}".format(src_pdf, dst_pdf))
+    os.system("cp {0} {1}".format(src_yaml, dst_yaml))
+    os.system("./yaml-to-bibtex.py -i {0} -o {1}".format(src_bib, dst_bib))
+    os.system("git add {0}".format(dst_pdf))
+    os.system("git add {0}".format(dst_yaml))
+    os.system("git add {0}".format(dst_bib))
+    os.system("git commit -m 'Added entry {0}'".format(article_doi))
+    os.system("git stash apply")
+    os.system("git stash drop")
+    os.system("git checkout master")
+    return branch
 
      
 # -----------------------------------------------------------------------------
@@ -93,7 +138,7 @@ if __name__ == '__main__':
     import argparse
 
     # Argument parsing
-    parser = argparse.ArgumentParser(description='DOI pre-reservation on Zenodo')
+    parser = argparse.ArgumentParser(description='Publishing on Zenodo')
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument('--sandbox', action='store_true',
                        help='Use the sandbox server')
@@ -107,12 +152,12 @@ if __name__ == '__main__':
 
 
     # Check if we have connection information
-    if args.sandbox:
-        server     = "sandbox.zenodo.org"
-        token_name = "ZENODO_SANDBOX_TOKEN"
-    else:
+    if args.zenodo:
         server     = "zenodo.org"
         token_name = "ZENODO_TOKEN"
+    else:
+        server     = "sandbox.zenodo.org"
+        token_name = "ZENODO_SANDBOX_TOKEN"
     token = os.getenv(token_name)
     if token is None:
         url = "".format(server)
@@ -146,52 +191,31 @@ if __name__ == '__main__':
     article_id = article_doi.split('.')[-1]
 
     # Upload content
-    print("Uploading content... ", end="")
-    upload_content(server, token, article_id, article_file)
+    print("Uploading content to Zenodo... ", end="")
+    #upload_content(server, token, article_id, article_file)
     print("done!")
         
     # Update metadata
-    print("Updating metadata... ", end="")
-    update_metadata(server, token, article_id, article)
+    print("Updating metadata to Zenodo... ", end="")
+    #update_metadata(server, token, article_id, article)
     print("done!")
 
     # Publish entry
-    print("Publishing... ", end="")
-    publish(server, token, article_id)
+    print("Publishing on Zenodo... ", end="")
+    #publish(server, token, article_id)
     print("done!")
 
     print("Entry is online at ", end="")
-    print("https://%s/record/%s" % (server, article_id))
+    #print("https://%s/record/%s" % (server, article_id))
     print()
 
     # Create a new local directory containing article and metadata
-    # This is done in a new branch
-    branch = article_doi.replace('/','_')
-    directory = branch
-    src_pdf = article_file
-    dst_pdf = os.path.join(directory, "article.pdf")
-    src_yaml = metadata_file
-    dst_yaml = os.path.join(directory, "article.yaml")
-    src_bib = metadata_file
-    dst_bib = os.path.join(directory, "article.bib")
-
-    
-    os.system("git stash")
-    os.system("git checkout -b {0}".format(branch))
-    os.system("mkdir {0}".format(directory))
-    os.system("cp {0} {1}".format(src_pdf, dst_pdf))
-    os.system("cp {0} {1}".format(src_yaml, dst_yaml))
-    os.system("./yaml-to-bibtex.py -i {0} -o {1}".format(src_bib, dst_bib))
-    os.system("git add {0}".format(dst_pdf))
-    os.system("git add {0}".format(dst_yaml))
-    os.system("git add {0}".format(dst_bib))
-    os.system("git commit -m 'Added entry {0}'".format(article_doi))
-    os.system("git checkout master")
+    print("Creating local directory...")
+    branch = git_branch(metadata_file, article_file, article_doi)
     print()
-
-    print("Local entry has been created in {0}.".format(directory))
-    print("A new git branch ({0}) has been created.".format(branch))
-
+    print("---------------------------------------------------")
+    print("You can now merge {0} into master".format(branch))
+    print("---------------------------------------------------")
     
 
 

@@ -16,34 +16,13 @@ def reserve_doi(server, token):
     url = 'https://%s/api/deposit/depositions' % server
     response = requests.post(url, params={'access_token': token},
                              json={}, headers=headers)
-    if response.status_code != 201:
+    if response.status_c ode != 201:
         raise IOError("%s: " % response.status_code +
                       response.json()["message"])
     data = response.json() 
     return data["id"], data["metadata"]["prereserve_doi"]["doi"]
 
 
-def reserve_number(volume, update=False):
-
-    # Open volume counter files
-    with open("volumes.yaml") as file:
-        data = yaml.load(file.read())
-
-    # Search for the given volume, creates it if necessary
-    key = "volume " + str(volume)
-    if key not in data.keys():
-        data[key] = 1
-    else:
-        data[key] += 1
-
-    number = data[key]
-
-    # Save result if update is True
-    if update:
-        with open("volumes.yaml",'w') as file:
-            yaml.dump(data, file, default_flow_style=False)
-
-    return number
 
 
 # -----------------------------------------------------------------------------
@@ -80,21 +59,13 @@ if __name__ == '__main__':
     with open(metadata_file) as file:
         article = Article(file.read())
 
-    # Get a new article number
-    volume = article.journal_volume
-    if args.sandbox:
-        article_number = reserve_number(volume, False)
-    else:
-        article_number = reserve_number(volume, False)
-    print("Article #:  ", article_number)
-    
     # Assign server and token
-    if args.sandbox:
-        server     = "sandbox.zenodo.org"
-        token_name = "ZENODO_SANDBOX_TOKEN"
-    else:
+    if args.zenodo:
         server     = "zenodo.org"
         token_name = "ZENODO_TOKEN"
+    else:
+        server     = "sandbox.zenodo.org"
+        token_name = "ZENODO_SANDBOX_TOKEN"
     token = os.getenv(token_name)
     if token is None:
         url = "".format(server)
