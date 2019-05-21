@@ -2,7 +2,7 @@
 # -----------------------------------------------------------------------------
 # Copyright 2018 ReScience C - BSD two-clauses licence
 #
-# This script reserves a DOI on zenodo and assign a new article number
+# This script reserves a DOI on zenodo
 # Zenodo REST API at http://developers.zenodo.org
 # -----------------------------------------------------------------------------
 import json
@@ -16,7 +16,7 @@ def reserve_doi(server, token):
     url = 'https://%s/api/deposit/depositions' % server
     response = requests.post(url, params={'access_token': token},
                              json={}, headers=headers)
-    if response.status_c ode != 201:
+    if response.status_code != 201:
         raise IOError("%s: " % response.status_code +
                       response.json()["message"])
     data = response.json() 
