@@ -192,21 +192,21 @@ if __name__ == '__main__':
 
     # Upload content
     print("Uploading content to Zenodo... ", end="")
-    #upload_content(server, token, article_id, article_file)
+    upload_content(server, token, article_id, article_file)
     print("done!")
         
     # Update metadata
     print("Updating metadata to Zenodo... ", end="")
-    #update_metadata(server, token, article_id, article)
+    update_metadata(server, token, article_id, article)
     print("done!")
 
     # Publish entry
     print("Publishing on Zenodo... ", end="")
-    #publish(server, token, article_id)
+    publish(server, token, article_id)
     print("done!")
 
     print("Entry is online at ", end="")
-    #print("https://%s/record/%s" % (server, article_id))
+    print("https://%s/record/%s" % (server, article_id))
     print()
 
     # Create a new local directory containing article and metadata
