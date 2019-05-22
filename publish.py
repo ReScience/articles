@@ -39,11 +39,10 @@ def update_metadata(server, token, article_id, article):
             'upload_type': 'publication',
             'publication_type': 'article',
             'description' : article.type,
-            'creators': [ {'name': author.name,
-                           'orcid': author.orcid} for author in article.authors],
+            'creators': [],
             'access_right' : 'open',
             'license' : 'cc-by',
-            'keywords' : article.keywords.split(),
+            'keywords' : article.keywords.split(','),
             'contributors' : [
 #                {'name': article.editors[0].name, 'type': 'Editor' },
 #                {'name': article.reviewers[0].name, 'type': 'Other' },
@@ -63,6 +62,14 @@ def update_metadata(server, token, article_id, article):
         }
     }
 
+    for author in article.authors:
+        name = author.name
+        orcid = author.orcid
+        author = {'name' : name}
+        if len(orcid) > 0:
+            author['orcid'] = orcid
+        data['metadata']['creators'].append(author)
+    
     if article.type in ["replication", "Replication"]:
         if article.code.doi is not None:
             data['metadata']['related_identifiers'].append(
@@ -82,10 +89,13 @@ def update_metadata(server, token, article_id, article):
     if len(article.editors) > 1 and len(article.reviewers[1].name) > 0:
         data['metadata']['contributors'].append(
             {'name': article.reviewers[1].name, 'type': 'Other' } )
-            
+
+
     response = requests.put(url, params={'access_token': token},
                             data=json.dumps(data),  headers=headers)
     if response.status_code != 200:
+        if "errors" in response.json().keys():
+            print(response.json()["errors"])
         raise IOError("%s: " % response.status_code +
                       response.json()["message"])
 
@@ -192,7 +202,7 @@ if __name__ == '__main__':
 
     # Upload content
     print("Uploading content to Zenodo... ", end="")
-    upload_content(server, token, article_id, article_file)
+    #upload_content(server, token, article_id, article_file)
     print("done!")
         
     # Update metadata

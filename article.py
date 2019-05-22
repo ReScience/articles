@@ -191,13 +191,18 @@ class Article:
             orcid = item.get("orcid","") or ""
             email = item.get("email","") or ""
             if item["affiliations"] is not None:
-                affiliations = item["affiliations"].split(",")
-                if "*" in affiliations:
-                    affiliations.remove("*")
-                    author = Contributor(role, name, orcid, email, affiliations)
-                    self.add_contributor(author)
-                    self.contact = author
+                if len(str(item["affiliations"])) > 1:
+                    affiliations = item["affiliations"].split(",")
+                    if "*" in affiliations:
+                        affiliations.remove("*")
+                        author = Contributor(role, name, orcid, email, affiliations)
+                        self.add_contributor(author)
+                        self.contact = author
+                    else:
+                        author = Contributor(role, name, orcid, email, affiliations)
+                        self.add_contributor(author)
                 else:
+                    affiliations = list(str(item["affiliations"]))
                     author = Contributor(role, name, orcid, email, affiliations)
                     self.add_contributor(author)
                 
