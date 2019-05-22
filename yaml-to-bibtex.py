@@ -12,7 +12,7 @@ def generate_bibtex(filename, article):
         "  month =        {{{_.date_published.month}}},\n"
         "  volume =       {{{_.journal_volume}}},\n"
         "  number =       {{{_.journal_issue}}},\n"
-        "  pages =        {{{{{#_.article_number}}}}},\n"
+        "  pages =        {{{{#{_.article_number}}}}},\n"
         "  doi =          {{{_.article_doi}}},\n"
         "  url =          {{{_.article_url}}},\n"
         "  code_url =     {{{_.code.url}}},\n"

@@ -49,7 +49,6 @@ def update_metadata(server, token, article_id, article):
 #                {'name': article.reviewers[1].name, 'type': 'Other' }
             ],
             'related_identifiers' : [
-#                  
 #                {'relation': 'isSupplementedBy', 'identifier': article.code.doi},
 #                {'relation': 'cites',     'identifier': article.replication.doi}
             ],
@@ -74,9 +73,9 @@ def update_metadata(server, token, article_id, article):
         if article.code.doi is not None:
             data['metadata']['related_identifiers'].append(
                 {'relation': 'isSupplementedBy', 'identifier': article.code.doi})
-        if article.replication.doi is not None:
-            data['metadata']['related_identifiers'].append(
-                {'relation': 'cites',     'identifier': article.replication.doi})
+#        if article.replication.doi is not None:
+#            data['metadata']['related_identifiers'].append(
+#                {'relation': 'cites',     'identifier': article.replication.doi})
 
     if server == "zenodo.org":
         data['metadata']["communities"].append({'identifier': 'rescience'})
@@ -219,13 +218,14 @@ if __name__ == '__main__':
     print("https://%s/record/%s" % (server, article_id))
     print()
 
-    # Create a new local directory containing article and metadata
-    print("Creating local directory...")
-    branch = git_branch(metadata_file, article_file, article_doi)
-    print()
-    print("---------------------------------------------------")
-    print("You can now merge {0} into master".format(branch))
-    print("---------------------------------------------------")
+    if args.zenodo:
+        # Create a new local directory containing article and metadata
+        print("Creating local directory...")
+        branch = git_branch(metadata_file, article_file, article_doi)
+        print()
+        print("---------------------------------------------------")
+        print("You can now merge {0} into master".format(branch))
+        print("---------------------------------------------------")
     
 
 
