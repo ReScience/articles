@@ -108,7 +108,7 @@ language:
 
 # For example, the URL of the GitHub issue where review actually occured
 review: 
-  - url: 
+  - url: https://github.com/ReScience/submissions/issues/5
 
 contributors:
   - name: Nicolas Rougier

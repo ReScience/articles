@@ -202,7 +202,7 @@ if __name__ == '__main__':
 
     # Upload content
     print("Uploading content to Zenodo... ", end="")
-    #upload_content(server, token, article_id, article_file)
+    upload_content(server, token, article_id, article_file)
     print("done!")
         
     # Update metadata

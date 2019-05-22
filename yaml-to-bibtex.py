@@ -12,7 +12,7 @@ def generate_bibtex(filename, article):
         "  month =        {{{_.date_published.month}}},\n"
         "  volume =       {{{_.journal_volume}}},\n"
         "  number =       {{{_.journal_issue}}},\n"
-        "  pages =        {{{_.article_number}}},\n"
+        "  pages =        {{{{{#_.article_number}}}}},\n"
         "  doi =          {{{_.article_doi}}},\n"
         "  url =          {{{_.article_url}}},\n"
         "  code_url =     {{{_.code.url}}},\n"
@@ -47,6 +47,17 @@ if __name__ == '__main__':
     with open(filename_in, "r") as file:
         article = Article(file.read())
 
+
+    article.authors_full = ""
+    n = len(article.authors)
+    if n==1:
+        article.authors_full = article.authors[0].fullname
+    else:
+        for i in range(n-1):
+            article.authors_full += article.authors[i].fullname + " and "
+        article.authors_full += article.authors[-1].fullname
+
+        
     content = generate_bibtex(filename_in, article)
     if filename_out is not None:
         with open(filename_out, "w") as file:
