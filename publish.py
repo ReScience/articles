@@ -82,12 +82,12 @@ def update_metadata(server, token, article_id, article):
     if len(article.editors) > 0:
         data['metadata']['contributors'].append(
             {'name': article.editors[0].name, 'type': 'Editor' } )
-    if len(article.editors) > 0 and len(article.reviewers[0].name) > 0:
-        data['metadata']['contributors'].append(
-            {'name': article.reviewers[0].name, 'type': 'Other' } )
-    if len(article.editors) > 1 and len(article.reviewers[1].name) > 0:
-        data['metadata']['contributors'].append(
-            {'name': article.reviewers[1].name, 'type': 'Other' } )
+#    if len(article.editors) > 0 and len(article.reviewers[0].name) > 0:
+#        data['metadata']['contributors'].append(
+#            {'name': article.reviewers[0].name, 'type': 'Other' } )
+#    if len(article.editors) > 1 and len(article.reviewers[1].name) > 0:
+#        data['metadata']['contributors'].append(
+#            {'name': article.reviewers[1].name, 'type': 'Other' } )
 
 
     response = requests.put(url, params={'access_token': token},
