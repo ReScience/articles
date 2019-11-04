@@ -19,7 +19,9 @@ using the `--sandbox` switch.
 #### 1. Pre-Publication (article DOI, URL and number)
 
 You can run the [process.py](process.py) script using the provided metadata
-file. In the example below, we use the sandbox server but in the end, you'll
+file. It requires Python 3 plus the [PyYAML](https://pyyaml.org/) and [Requests](https://requests.kennethreitz.org/) libraries.
+
+In the example below, we use the sandbox server but in the end, you'll
 need to use the actual server using the `--zenodo` switch instead of the
 `--sandbox` switch.
 
