@@ -1,0 +1,125 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it should be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[-Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "Eliminating the Variability of Cross-Validation Results with LIBLINEAR
+due to Randomization and Parallelization"
+
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Vladimir Sukhoy
+    orcid: 0000-0003-2208-9459
+    email: sukhoy@iastate.edu
+    affiliations: 1,*
+
+  - name: Alexander Stoytchev
+    orcid: 0000-0002-9871-4663
+    email: alexs@iastate.edu
+    affiliations: 1      # * is for contact author
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Iowa State University, Department of Electrical and Computer Engineering
+    address: Ames, IA 50011, USA
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience c, c, c++, randomized algorithms, support vector machines, cross-validation, parallelized learning algorithms
+
+# Code URL and DOI (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo,
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/sukhoy/cvrep
+  - doi:
+
+# Date URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: # Full textual citation
+ - bib:  # Bibtex key (if any) in your bibliography file
+ - url:  # URL to the PDF, try to link to a non-paywall version
+ - doi:  # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "Cross-validation is the gold standard for evaluating machine learning
+algorithms or fine-tuning their parameters.
+The results of this technique, however, are not always reproducible and may
+depend on the computing platform and the number of parallel threads,
+especially if the underlying learning algorithm uses a pseudo-random number
+generator (PRNG). This paper gives a recipe for solving these reproducibility problems and
+applies it to LIBLINEAR, a popular software library
+that implements randomized learning algorithms based on support vector
+machines. The proposed approach solves these
+problems by using a cross-platform PRNG and by making the PRNG state private
+in each thread. The cross-validation results obtained with the modified
+version of LIBLINEAR were the same across platforms. Furthermore, the
+parallelized cross-validation results were no longer affected by random
+fluctuations arising from the sharing of the PRNG state by parallel threads."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Letter
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Machine Learning
+
+# Coding language (main one only if several)
+language: c++
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# The URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/6
+
+contributors:
+  - name: Konrad Hinsen
+    orcid: 0000-0003-0330-9428
+    role: editor
+  - name: Georgios Detorakis
+    orcid: 0000-0001-5891-1702
+    role: reviewer
+  - name: Xavier Hinaut
+    orcid: 0000-0002-1924-1184
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  July 15, 2019
+  - accepted: October 30, 2019
+  - published: November 4, 2019
+
+# This information will be provided by the editor
+article:
+  - number: 1
+  - doi:    10.5281/zenodo.3528175
+  - url:    https://zenodo.org/record/3528175/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 5
+  - issue:  3
