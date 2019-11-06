@@ -32,17 +32,43 @@ Article DOI: 10.5281/zenodo.xxxxx
 Article URL: https://zenodo.org/record/xxxxxx/file/article.pdf
 ```
 
+You must also assign the issue, volume, and article numbers. Have a
+look on the published articles and assign the next available number in
+the same issue and same volume if your article is still in the same
+year.  Otherwise, increment the issue number and start with
+volume 1. Post your numbers to [this GitHub
+issue](https://github.com/ReScience/ReScience/issues/48) that serves
+to avoid that two editors assign the same numbers to two different
+articles.
+
+
+#### 2. Metadata update and creation of the final PDF
+
+The `metadata.yaml` has a section (at the end) for information added during
+the publication process. You should complete it and verify the whole file
+before moving on. The information you must add is:
+  - DOI (from Zenodo)
+  - article URL (from Zenodo)
+  - contributors (reviewers and editors), with ORCIDs
+  - acceptation and publication date
+  - issue, volume, and article numbers.
+
+Next, there are two situations:
+
+ - If the authors have used the [ReScience article template](http://github.com/rescience/template),
+   you can fork their repository, copy the edited `metadata.yaml` to it, and create
+   the final PDF by running `make`. Don't forget to submit a pull request to the
+   authors' repository with the changes you made to `metadata.yaml`.
+
+ - Otherwise, you give the authors the required information and
+   ask them to update their article and produce the final PDF file. You should
+   check that their PDF contains all the information you sent them.
+   
 You need to give this information back to author(s) such that they can update
 the metadata file as well as the article that display the DOI in the left
 margin (make sure they actually update this information). For the article
 number, you can have a look on the published articles and assign the next
 available number in the same issue and same volume.
-
-#### 2. Recreate the PDF
-
-Make sure the author regenerated the PDF with the supplied information and
-check the output is correct (type of the articlme, name of the editor, name of
-the reviewers, volume number, issuer number, article number, DOI and code DOI).
 
 
 #### 3. Publication (Zenodo and GitHub)
