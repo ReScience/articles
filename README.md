@@ -18,17 +18,25 @@ using the `--sandbox` switch.
 
 #### 1. Pre-Publication (article DOI, URL and number)
 
-You can run the [process.py](process.py) script using the provided metadata
+Run the [process.py](process.py) script using the provided metadata
 file. It requires Python 3 plus the [PyYAML](https://pyyaml.org/) and [Requests](https://requests.kennethreitz.org/) libraries.
 
-In the example below, we use the sandbox server but in the end, you'll
-need to use the actual server using the `--zenodo` switch instead of the
-`--sandbox` switch.
+First run on the sandbox server to check everything is OK:
 
 ```bash
 $ ./process.py --sandbox --metadata metadata.yaml --pdf article.pdf
 Article ID: xxxxx
-Article DOI: 10.5281/zenodo.xxxxx
+Article DOI: 10.xxxx/zenodo.xxxxx
+Article URL: https://zenodo.org/record/xxxxxx/file/article.pdf
+```
+
+Then use the actual server using the `--zenodo` switch instead of the
+`--sandbox` switch.
+
+```bash
+$ ./process.py --zenodo --metadata metadata.yaml --pdf article.pdf
+Article ID: xxxxx
+Article DOI: 10.xxxx/zenodo.xxxxx
 Article URL: https://zenodo.org/record/xxxxxx/file/article.pdf
 ```
 
@@ -50,7 +58,7 @@ before moving on. The information you must add is:
   - DOI (from Zenodo)
   - article URL (from Zenodo)
   - contributors (reviewers and editors), with ORCIDs
-  - acceptation and publication date
+  - acceptance and publication date
   - issue, volume, and article numbers.
 
 Next, there are two situations:
