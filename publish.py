@@ -188,7 +188,7 @@ if __name__ == '__main__':
         
     # Check if metadata file is newer than pdf
     if os.path.getmtime(metadata_file) > os.path.getmtime(article_file):
-        print("Metadata is newer than PDF, probably PDF needs to be rebuild")
+        print("Metadata is newer than PDF, probably PDF needs to be rebuilt")
         sys.exit(0)
 
     # Read article metadata
