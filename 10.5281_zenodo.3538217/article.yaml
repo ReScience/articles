@@ -1,0 +1,112 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Connectivity reflects coding a model of voltage-based STDP with
+        homeostasis"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Rene Larisch
+    orcid:
+    email: rene.larisch@informatik.tu-chemnitz.de
+    affiliations: 1,*
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Professorship for Artificial Intelligence, Department of Computer Science, Chemnitz University of Technology
+    address: D-09107 Chemnitz, Germany
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: Spike Timing-Dependent Plasticity (STDP), Computational Neuroscience, Unsupervised Learning, Python
+
+# Code URL and DOI (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo,
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/rLarisch/ReScience-submission/tree/Larisch-2019/code
+  - doi:
+
+# Date URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Connectivity reflects coding a model of voltage-based STDP with homeostasis,
+         C.Clopath, L. Buesing, E.Vasilaki and W. Gerstner, Nature Neuroscience 13.3 (2010), pp. 344-352 # Full textual citation
+ - bib:  # Bibtex key (if any) in your bibliography file
+ - url:   https://www.nature.com/articles/nn.2479 # URL to the PDF, try to link to a non-paywall version
+ - doi:  10.1038/nn.2479 # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "Since the first description of spike timing-dependent plasticity (STDP), different models
+            of STDP have been published to reproduce different experimental findings.
+            Clopath et al. (2010) introduced a STDP model which is able to reproduce the experimental findings of triplet studies.
+            They implemented a homeostatic mechanism to control the level of generated LTD, based on the relationship between the average postsynaptic membrane
+potential and a reference value. With this voltage-based STDP rule thei reproduce a wide range of physiological experiments.
+We here present a reimplementation of the Clopath et al . (2010) learning rule in Python with the help of the neuro-simulator ANNarchy."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Computational Neuroscience
+
+# Coding language (main one only if several)
+language: Python
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: https://github.com/ReScience/ReScience-submission/pull/57#issuecomment-549728501
+
+contributors:
+  - name: Georgios Detorakis
+    orcid: 0000-0001-5891-1702 
+    role: editor
+  - name: Christian Jarvers 
+    orcid: 0000-0003-0062-9776
+    role: reviewer
+  - name: Andrew P. Davison
+    orcid: 0000-0002-4793-7541
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  November 1, 2018
+  - accepted:  November 4, 2019
+  - published: November 12, 2019
+
+# This information will be provided by the editor
+article:
+  - number: 2
+  - doi: 10.5281/zenodo.3538217 
+  - url: https://zenodo.org/record/3538217/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 5
+  - issue:  3
