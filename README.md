@@ -43,11 +43,11 @@ Article URL: https://zenodo.org/record/xxxxxx/file/article.pdf
 You must also assign the issue, volume, and article numbers. Have a
 look on the published articles and assign the next available number in
 the same issue and same volume if your article is still in the same
-year.  Otherwise, increment the issue number and start with
-volume 1. Post your numbers to [this GitHub
-issue](https://github.com/ReScience/ReScience/issues/48) that serves
-to avoid that two editors assign the same numbers to two different
-articles.
+year.  Otherwise, increment the volume number and start with
+issue 1. The issue number is only changed for accommodating special issues.
+Post your numbers to [this GitHub issue](https://github.com/ReScience/ReScience/issues/48)
+that serves to avoid that two editors assign the same numbers to two
+different articles.
 
 
 #### 2. Metadata update and creation of the final PDF
@@ -105,10 +105,12 @@ Local entry has been created in 10.5072_zenodo.xxxxx
 A new git branch (10.5072_zenodo.xxxxx) has been created.
 ```
 
-This will create a new public record on Zenodo and this will also create a new
-local directory corresponding to the entry. This means you need to push this
-new branch on GitHub and make a pull request (the commit will have been created
-automatically).
+This example uses the sandbox, replace `--sandbox` by `--zenodo` for
+publishing to the Zenodo production site! This will create a new
+public record on Zenodo and also create a new local directory
+corresponding to the entry. This means you need to push this new
+branch on GitHub and make a pull request (the commit will have been
+created automatically).
 
 
 #### Website update
