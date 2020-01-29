@@ -1,0 +1,108 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Rp] Reproduction of interaction second virial coefficient calculation for H$_2$--CO interactions [J. Chem. Phys. vol. 112, 4417 (2000)]"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: George C. McBane
+    orcid: 0000-0002-2790-3467
+    email: mcbaneg@gvsu.edu
+    affiliations: 1,*
+    
+ # List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Department of Chemistry, Grand Valley State University
+    address: Allendale, MI 49401 USA
+    
+ 
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience c, chemical physics, potential energy surfaces, virial coefficients, Fortran
+
+# Code URL and DOI (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo,
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: http://faculty.gvsu.edu/mcbaneg/virial6-resciencec.zip
+  - doi: 
+  - swh: swh:1:snp:85dcb31156194ea3bad60f06c1e7999e7bb1a90c
+
+# Date URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite:  J. Gottfried and George C. McBane, J. Chem. Phys. 112(9), 4417 (2000)
+ - bib:  gott00
+ - url:  https://scholarworks.gvsu.edu/chm_articles/13
+ - doi:  10.1063/1.480989
+
+# Don't forget to surround abstract with double quotes
+abstract: "A calculation of interaction virial coefficients for the hydrogen-carbon monoxide system has been reproduced successfully.  The main calculation is a set of nested quadratures.  The program, written in Fortran, uses IQPACK routines for quadrature weights and nodes, BLAS routines for vector manipulation, and a dedicated subsystem to evaluate the potential energy as a function of molecular coordinates. Only very minor modifications to the main code were required to run it on a modern machine."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Reproduction
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Chemical Physics
+
+# Coding language (main one only if several)
+language: Fortran
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: 
+
+contributors:
+  - name: Konrad Hinsen
+    orcid: 0000-0003-0330-9428
+    role: editor
+  - name: Pierre de Buyl
+    orcid: 0000-0002-6640-6463
+    role: reviewer
+  - name: 
+    orcid: 
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  November 23, 2019
+  - accepted:  January 29, 2020
+  - published: January 29, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 1
+  - doi:    10.5281/zenodo.3630224
+  - url:    https://zenodo.org/record/3630224/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1
