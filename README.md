@@ -117,10 +117,10 @@ created automatically).
 
 To have the new article to appear on the website, you'll need to prepend the
 newly created bibtex entry (look into the local repository) to the
-[published.bib](https://github.com/rescience-c/rescience-c.github.io/blob/sources/_bibliography/published.bib)
+[published.bib](https://github.com/ReScience/rescience.github.io/blob/sources/_bibliography/published.bib)
 file on the website (you can do it directly from the GitHub interface). If you
 previously added the entry to the
-[under_review.bib](https://github.com/rescience-c/rescience-c.github.io/blob/sources/_bibliography/under_review.bib)
+[under_review.bib](https://github.com/ReScience/rescience.github.io/blob/sources/_bibliography/under-review.bib)
 file, don't forget to remove it.
 
 
