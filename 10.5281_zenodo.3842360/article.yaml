@@ -1,0 +1,120 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Mathematical analysis of depolarization block mediated by slow inactivation of fast sodium channels in midbrain dopamine neurons"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Mary Upshall
+    orcid: 0000-0003-0376-843X
+    email: mupsh059@uottawa.ca
+    affiliations: 1,2,3,*       # * is for contact author
+    
+  - name: Aaron R. Shifman
+    orcid: 0000-0003-2140-7590
+    email: ashifman@uottawa.ca
+    affiliations: 1,2,3
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Department of Biology, University of Ottawa
+    address: Ottawa, Ontario, Canada
+    
+  - code:    2
+    name:     uOttawa Brain and Mind Research Institute
+    address:  Ottawa, Ontario, Canada
+    
+  - code:    3
+    name:    Center for Neural Dynamics, University of Ottawa
+    address: Ottawa, Ontario, Canada
+
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: Python, depolarization block, dopaminergic neurons
+
+# Code URL and DOI (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo,
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/mupsh/ReScience_Qian_2014
+  - doi: 
+  - swh: swh:1:rev:e1040fe3fbaefef4166964772efa08ada444db6e;origin=https://github.com/mupsh/ReScience_Qian_2014.git
+
+# Date URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Original article (Mathematical analysis of depolarization block mediated by slow inactivation of fast sodium channels in midbrain dopamine neurons., Qian, K., Yu, N., Tucker, K. R., Levitan, E. S., and Canavier, C. C., Journal of Neurophysiology
+ - bib:  Qian2014
+ - url:  https://www.physiology.org/doi/full/10.1152/jn.00578.2014
+ - doi:  10.1152/jn.00578.2014
+
+# Don't forget to surround abstract with double quotes
+abstract: "Dopamine neurons in freely moving rats often fire behaviorally relevant high-frequency bursts, but depolarization block limits the maximum steady firing rate of dopamine neurons in vitro to $\\approx$10 Hz. Using a reduced model that faithfully reproduces the sodium current measured in these neurons, we show that adding an additional slow component of sodium channel inactivation, recently observed in these neurons, qualitatively changes in two different ways how the model enters into depolarization block. First, the slow time course of inactivation allows multiple spikes to be elicited during a strong depolarization prior to entry into depolarization block. Second, depolarization block occurs near or below the spike threshold, which ranges from -45 to -30 mV in vitro, because the additional slow component of inactivation negates the sodium window current. In the absence of the additional slow component of inactivation, this window current produces an N-shaped steady-state current-voltage (I-V) curve that prevents depolarization block in the experimentally observed voltage range near -40 mV. The time constant of recovery from slow inactivation during the interspike interval limits the maximum steady firing rate observed prior to entry into depolarization block. These qualitative features of the entry into depolarization block can be reversed experimentally by replacing the native sodium conductance with a virtual conductance lacking the slow component of inactivation. We show that the activation of NMDA and AMPA receptors can affect bursting and depolarization block in different ways, depending upon their relative contributions to depolarization versus to the total linear/nonlinear conductance."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Computational Neuroscience
+
+# Coding language (main one only if several)
+language: Python
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/9
+
+contributors:
+  - name: Nicolas P. Rougier
+    orcid: 0000-0002-6972-589X
+    role: editor
+  - name: Robin Gutzen
+    orcid: 0000-0001-7373-5962
+    role: reviewer
+  - name: Christian Jarvers
+    orcid: 0000-0003-0062-9776
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received: October 25, 2019
+  - accepted: April 27, 2020
+  - published: May 22, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 1 # Article number will be automatically assigned during publication
+  - doi:      10.5281/zenodo.3842360
+  - url:      https://zenodo.org/record/3842360/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  3
