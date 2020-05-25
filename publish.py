@@ -70,7 +70,7 @@ def update_metadata(server, token, article_id, article):
         data['metadata']['creators'].append(author)
     
     if article.type in ["replication", "Replication"]:
-        if article.code.doi is not None:
+        if article.code.doi is not None and len(article.code.doi):
             data['metadata']['related_identifiers'].append(
                 {'relation': 'isSupplementedBy', 'identifier': article.code.doi})
 #        if article.replication.doi is not None:
