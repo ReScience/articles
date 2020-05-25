@@ -1,0 +1,122 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Rp] Reproducing and replicating the OCamlP3l experiment"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Di Cosmo, Roberto
+    orcid: 0000-0002-7493-5349
+    email: roberto@dicosmo.org
+    affiliations: 1,2,*
+    
+  - name: Danelutto, Marco 
+    orcid: 0000-0002-7433-376X
+    email: marcod@di.unipi.it
+    affiliations: 3
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Inria
+    address: Paris, France
+    
+  - code:    2
+    name:    Université de Paris
+    address: Paris, France
+    
+  - code:    3
+    name:    University of Pisa
+    address: Pisa, Italy
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience c
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://archive.softwareheritage.org/swh:1:rev:2db189928c94d62a3b4757b3eec68f0a4d4113f0;origin=https://gitorious.org/ocamlp3l/ocamlp3l_cvs.git/
+  - doi: 
+  - swh: swh:1:rev:2db189928c94d62a3b4757b3eec68f0a4d4113f0;origin=https://gitorious.org/ocamlp3l/ocamlp3l_cvs.git/
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: # Full textual citation
+ - bib:  danelutto:hal-01499962 # Bibtex key (if any) in your bibliography file
+ - url:  https://hal.inria.fr/hal-01499962 # URL to the PDF, try to link to a non-paywall version
+ - doi:  # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "We report on the effort to reproduce and replicate the results related to the OCamlP3L
+           parallel programming system, originally developed in 1997 using the OCaml
+           functional programming language."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+#  * Reproduction
+type: Reproduction
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: parallel programming
+
+# Coding language (main one only if several)
+language: OCaml
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/22
+
+contributors:
+  - name: Konrad Hinsen
+    orcid: 0000-0003-0330-9428
+    role: editor
+  - name: Frédéric Gava
+    orcid: 0000-0001-5452-3809
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received: March 24, 2020
+  - accepted: April 23, 2020
+  - published: April 23, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 2
+  - doi:    10.5281/zenodo.3763416
+  - url:    https://zenodo.org/record/3763416/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1

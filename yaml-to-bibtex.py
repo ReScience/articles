@@ -17,6 +17,7 @@ def generate_bibtex(filename, article):
         "  url =          {{{_.article_url}}},\n"
         "  code_url =     {{{_.code.url}}},\n"
         "  code_doi =     {{{_.code.doi}}},\n"
+        "  code_swh =     {{{_.code.swh}}},\n"
         "  data_url =     {{{_.data.url}}},\n"
         "  data_doi =     {{{_.data.doi}}},\n"
         "  review_url =   {{{_.review.url}}},\n"
