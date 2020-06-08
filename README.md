@@ -34,7 +34,7 @@ First run on the sandbox server to check everything is OK:
 $ ./process.py --sandbox --metadata metadata.yaml --pdf article.pdf
 Article ID: xxxxx
 Article DOI: 10.xxxx/zenodo.xxxxx
-Article URL: https://zenodo.org/record/xxxxxx/file/article.pdf
+Article URL: https://sandbox.zenodo.org/record/xxxxxx/file/article.pdf
 ```
 
 Then use the actual server using the `--zenodo` switch instead of the
