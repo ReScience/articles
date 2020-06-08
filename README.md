@@ -11,7 +11,14 @@ and from the [actual
 server](https://zenodo.org/account/settings/applications/tokens/new/).
 
 The sandbox token is expected to be stored in the environment variable
-`ZENODO_SANDBOX_TOKEN` while the true token must be stored in `ZENODO_TOKEN`.
+`ZENODO_SANDBOX_TOKEN` while the true token must be stored in `ZENODO_TOKEN`, e.g.:
+```
+ZENODO_SANDBOX_TOKEN="access token"
+```
+And to check it was set correctly:
+```
+echo $ZENODO_SANDBOX_TOKEN 
+```
 We strongly advise you to **first test the procedure** on the sandbox server
 using the `--sandbox` switch.
 
@@ -71,7 +78,7 @@ Next, there are two situations:
  - Otherwise, you give the authors the required information and
    ask them to update their article and produce the final PDF file. You should
    check that their PDF contains all the information you sent them.
-   
+
 You need to give this information back to author(s) such that they can update
 the metadata file as well as the article that display the DOI in the left
 margin (make sure they actually update this information). For the article
@@ -122,5 +129,3 @@ file on the website (you can do it directly from the GitHub interface). If you
 previously added the entry to the
 [under_review.bib](https://github.com/ReScience/rescience.github.io/blob/sources/_bibliography/under-review.bib)
 file, don't forget to remove it.
-
-
