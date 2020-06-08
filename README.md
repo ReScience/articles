@@ -12,12 +12,12 @@ server](https://zenodo.org/account/settings/applications/tokens/new/).
 
 The sandbox token is expected to be stored in the environment variable
 `ZENODO_SANDBOX_TOKEN` while the true token must be stored in `ZENODO_TOKEN`, e.g.:
-```
+```bash
 ZENODO_SANDBOX_TOKEN="access token"
 ```
 And to check it was set correctly:
-```
-echo $ZENODO_SANDBOX_TOKEN 
+```bash
+echo $ZENODO_SANDBOX_TOKEN
 ```
 We strongly advise you to **first test the procedure** on the sandbox server
 using the `--sandbox` switch.
