@@ -1,0 +1,113 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Rp] Structural flexibility in proteins - impact of the crystal environment"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Konrad Hinsen
+    orcid: 0000-0003-0330-9428
+    email: konrad.hinsen@cnrs.fr
+    affiliations: 1,2,*
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Centre de Biophysique Moléculaire, CNRS UPR4301
+    address: Orléans, France
+    
+  - code:    2
+    name:    Synchrotron SOLEIL, Division Expériences
+    address: Gif sur Yvette, France
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: protein structure, protein crystals, normal modes, Python
+
+# Code URL and DOI (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo,
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/khinsen/rescience-ten-year-challenge-paper-3
+  - doi: 
+  - swh: swh:1:dir:8a73b8438b411cc8a58a3db7789ff45690808afa
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: K. Hinsen, Structural flexibility in proteins - impact of the crystal environment, Bioinformatics 24:521 (2008)
+ - bib:  HinsenStructuralflexibilityproteins2008
+ - url:  https://academic.oup.com/bioinformatics/article-pdf/24/4/521/16884353/btm625.pdf
+ - doi:  10.1093/bioinformatics/btm625
+
+# Don't forget to surround abstract with double quotes
+abstract: "Reproduction attempt of K. Hinsen, Structural flexibility in proteins: impact
+           of the crystal environment, Bioinformatics 24:521 (2008). The code published
+           with the original article could be modified to work on a modern computer,
+           and produced sufficiently similar results. However, it proved insufficient
+           for a complete replication of all the results."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Reproduction
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Biophysics
+
+# Coding language (main one only if several)
+language: Python
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/14
+
+contributors:
+  - name: Marc André Delsuc
+    orcid: 0000-0002-1400-5326
+    role: editor
+  - name: François-Xavier Coudert
+    orcid: 0000-0001-5318-3910
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received: January 30, 2020
+  - accepted: March 19, 2020
+  - published: June 9, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 5
+  - doi:    10.5281/zenodo.3886447
+  - url:    https://zenodo.org/record/3886447/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1
