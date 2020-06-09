@@ -101,7 +101,7 @@ dates:
 # This information will be provided by the editor
 article:
   - number: 4
-  - doi:    0.5281/zenodo.3886412
+  - doi:    10.5281/zenodo.3886412
   - url:    https://zenodo.org/record/3886412/files/article.pdf
 
 # This information will be provided by the editor
