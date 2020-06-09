@@ -58,6 +58,7 @@ class Repository:
         self.name = name
         self.url = url
         self.doi = doi
+        self.swh = swh
 
 class Replication:
     def __init__(self, cite, bib, url, doi):
