@@ -2,6 +2,7 @@
 # Released under the BSD two-clauses licence
 
 import yaml
+import dateutil.parser
 
 class Contributor:
     def __init__(self, role, name, orcid="", email="", affiliations=[]):
@@ -74,23 +75,12 @@ class Review:
 
 class Date:
     def __init__(self, date):
-        try:
-            import dateutil.parser
-
-            date = dateutil.parser.parse(date)
-            self.date = date
-            self.year = date.year
-            self.month = date.month
-            self.day = date.day
-            self.textual = self.date.strftime("%d %B %Y")
-        except:
-            import datetime
-            now = datetime.datetime.now()
-            self.date = now
-            self.year = now.year
-            self.month = now.month
-            self.day = now.day
-            self.textual = ""
+        date = dateutil.parser.parse(date)
+        self.date = date
+        self.year = date.year
+        self.month = date.month
+        self.day = date.day
+        self.textual = self.date.strftime("%d %B %Y")
 
     def __str__(self):
         return self.textual

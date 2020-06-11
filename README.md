@@ -26,7 +26,7 @@ using the `--sandbox` switch.
 #### 1. Pre-Publication (article DOI, URL and number)
 
 Run the [process.py](process.py) script using the provided metadata
-file. It requires Python 3 plus the [PyYAML](https://pyyaml.org/) and [Requests](https://requests.kennethreitz.org/) libraries.
+file. It requires Python 3 plus the libraries [PyYAML](https://pyyaml.org/), [Requests](https://requests.kennethreitz.org/), and [dateutil](https://dateutil.readthedocs.io/en/stable/).
 
 First run on the sandbox server to check everything is OK:
 
