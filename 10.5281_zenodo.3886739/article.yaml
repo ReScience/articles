@@ -1,0 +1,111 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Storage Tradeoffs in a Collaborative Backup Service for Mobile Devices"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+authors:
+  - name: Ludovic Courtès
+    orcid: 0000-0003-4472-154X
+    email: ludovic.courtes@inria.fr
+    affiliations: 1,*
+    
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Inria
+    address: Bordeaux, France
+    
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience c, rescience x, resilience, fault tolerance, C, Scheme
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://gitlab.inria.fr/lcourtes-phd/edcc-2006-redone
+  - doi: 
+  - swh: swh:1:rev:36fde7e5ba289c4c3e30d9afccebbe0cfe83853a;origin=https://gitlab.inria.fr/lcourtes-phd/edcc-2006-redone
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Storage Tradeoffs in a Collaborative Backup Service for Mobile Devices
+ - bib: courtes06:storage
+ - url: https://hal.inria.fr/hal-00187069/en
+ - doi: 10.1109/EDCC.2006.26 # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "This article reports on the effort to reproduce the results
+           shown in \"Storage Tradeoffs in a Collaborative Backup
+	   Service for Mobile Devices\", an article published in
+	   2006.  Additionally, it describes a way to capture the
+	   complete dependency graph of this article and the software
+	   and data it refers to, making it fully reproducible."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Fault Tolerance
+
+# Coding language (main one only if several)
+language: C
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/32
+
+contributors:
+  - name: Tiziano Zito
+    orcid: 
+    role: editor
+  - name: Sabino Maggi
+    orcid: 0000-0002-1523-6484
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  April 28, 2020
+  - accepted: June 6, 2020
+  - published: June 9, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 6
+  - doi:   10.5281/zenodo.3886739
+  - url:   https://zenodo.org/record/3886739/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1
