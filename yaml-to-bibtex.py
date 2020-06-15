@@ -4,7 +4,7 @@
 
 def generate_bibtex(filename, article):
     content = (
-        "@Article {{{_.authors[0].lastname}:{_.date_published.year},\n"
+        "@Article {{{_.bibtex_label}:{_.date_published.year},\n"
         "  author =       {{{_.authors_full}}},\n"
         "  title =        {{{{{_.title}}}}},\n"
         "  journal =      {{{_.journal_name}}},\n"
