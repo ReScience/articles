@@ -1,5 +1,6 @@
 # ReScience yaml parser
 # Released under the BSD two-clauses licence
+import unicodedata
 
 import yaml
 import dateutil.parser
@@ -154,6 +155,14 @@ class Article:
 
                 self.authors_full += self.authors[n-2].fullname + " and "
                 self.authors_full += self.authors[n-1].fullname
+
+        # create ASCII bibtex label
+        # - Try to convert unicode character to their ASCII equivalent
+        bibtex_label_bytes = \
+        unicodedata.normalize('NFKD', self.authors[0].lastname).encode('ascii',
+                                                                       'ignore')
+        self.bibtex_label = str(bibtex_label_bytes, 'ascii')
+
 
             
         
