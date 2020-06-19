@@ -1,0 +1,116 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Rp] Parallelization of an object-oriented FEM dynamics code"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Olivier Pantalé
+    orcid: 0000-0001-7367-5453
+    email: olivier.pantale@enit.fr
+    affiliations: 1,*      # * is for contact author
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Laboratoire Génie de Production, Ecole Nationale d'Ingénieurs de Tarbes, EA 1905
+    address: Tarbes, France
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: C++, Finite Elements Code, Parallel programming, OpenMP
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/pantale/ReDynELA
+  - doi: 
+  - swh: swh:1:dir:e45b8b7efb002231f4081c429c4ca33664d0812d
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: "Olivier Pantalé, Parallelization of an object-oriented FEM dynamics code: influence of the strategies on the Speedup. (2005) Advances in Engineering Software, 36 (6). 361-373" # Full textual citation
+ - bib:  "Pantale:2005"
+ - url:  "https://oatao.univ-toulouse.fr/5378" # URL to the PDF, try to link to a non-paywall version
+ - doi:  "10.1016/j.advengsoft.2005.01.003" # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "Three years have passed since ReScience published its first article
+           and since September 2015, things have been going steadily. We're
+           still alive, independent and without a budget. In the meantime, we
+           have published around 20 articles (mostly in computational
+           neuroscience & computational ecology) and the initial has grown
+           from around 10 to roughly 100 members (editors and reviewers), we
+           have advertised ReScience at several conferences worldwide, gave
+           some interviews and we published an article introducing ReScience in
+           PeerJ. Based on our experience at managing the journal during these
+           three years, we think the time is ripe for proposing some changes."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Reproduction
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: "Computational Mechanics"
+
+# Coding language (main one only if several)
+language: "C++"
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/19
+
+contributors:
+  - name: Lorena A. Barba
+    orcid: 0000-0001-5812-2711
+    role: editor
+  - name: Konrad Hinsen
+    orcid: 0000-0003-0330-9428
+    role: reviewer
+  - name: 
+    orcid: 
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  March 2, 2020
+  - accepted:  June 15, 2020
+  - published: June 19, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 8
+  - doi:    10.5281/zenodo.3901241
+  - url:    https://zenodo.org/record/3901241
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1
