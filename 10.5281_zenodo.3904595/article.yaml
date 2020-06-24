@@ -1,0 +1,116 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Rp] Gifa V.4: A complete package for NMR data set processing"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+authors:
+  - name: Marc-Andr{\'e} Delsuc
+    orcid: 0000-0002-1400-5326
+    email: madelsuc@unistra.fr
+    affiliations: 1,2,*
+    
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Institut de G{\'e}n{\'e}tique Biologie Mol{\'e}culaire et Cellulaire - UMR 7104 - Inserm U 1258
+    address: Illkirch, France
+    
+  - code:    2
+    name:    CASC4DE,  SAS
+    address: Illkirch, France
+    
+# List of keywords (adding the programming language might be a good idea)
+keywords: NMR, data processing, FORTRAN77
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/delsuc/Gifa
+  - doi: 
+  - swh: swh:1:dir:57cb6f31528c596cc67ce46e142f3de8cb082bcb
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite:  Gifa V. 4 a complete package for NMR data set processing
+          JL Pons, TE Malliavin, MA Delsuc
+          J. Bio NMR 8 (4), 445-452 (1996)
+ - bib:  Pons_1996
+ - url:  http://www.delsuc.net/pdf/2007-Journal\%20of\%20Magnetic\%20Resonance-Tramesel.pdf
+ - doi:  10.1016/j.jmr.2007.05.023
+
+# Don't forget to surround abstract with double quotes
+abstract: "Reproduction of Gifa V. 4 a complete package for NMR data set processing
+          JL Pons, TE Malliavin, MA Delsuc
+          J. Bio NMR 8 (4), 445-452 (1996)
+          The version of the code originally published was lost, but a latter version of
+          the program was used and fully reproduced on a recent computer."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Reproduction
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Analytical Chemistry
+
+# Coding language (main one only if several)
+language: FORTRAN77
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/33
+
+contributors:
+  - name: Pierre de Buyl
+    orcid: 0000-0002-6640-6463
+    role: editor
+  - name: Konrad Hinsen
+    orcid: 0000-0003-0330-9428
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received: April 30, 2020
+  - accepted: June 18, 2020
+  - published: June 23, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 9 # Article number will be automatically assigned during publication
+  - doi: 10.5281/zenodo.3904595   # DOI from Zenodo
+  - url: https://zenodo.org/record/3904595/files/article.pdf   # Final PDF URL (Zenodo or rescience website?)
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1
