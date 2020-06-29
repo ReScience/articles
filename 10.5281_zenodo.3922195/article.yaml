@@ -1,0 +1,129 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Rp] Reproduction of Step width enhancement in a pulse-driven Josephson junction"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Sabino Maggi
+    orcid: 0000-0002-1523-6484
+    email: sabino.maggi@cnr.it
+    affiliations: 1,*
+    
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    National Research Council, Institute of Atmospheric Pollution Research, CNR-IIA
+    address: Bari, Italy
+    
+  # - code:    2
+  #   name:    National Institute of Metrological research, INRiM
+  #   address: Torino, Italy
+    
+  # - code:    3
+  #   name:    INRIA Bordeaux Sud-Ouest
+  #   address: Bordeaux, France
+  #
+  # - code:    4
+  #   name:    LaBRI, Université de Bordeaux, Institut Polytechnique de Bordeaux,
+  #            Centre National de la Recherche Scientifique, UMR 5800
+  #   address: Talence, France
+  #
+  # - code:    5
+  #   name:    Institut des Maladies Neurodégénératives, Université  de Bordeaux,
+  #            Centre National de la Recherche Scientifique, UMR 5293
+  #   address: Bordeaux, France
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience c, fortran, visual basic, josephson junction, voltage standard
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/sabinomaggi/ten-years-challenge-pulsed-drive
+  - doi: 
+  - swh: swh:1:dir:bc7700a81a8fd426d06d89c15c9655998d12c523
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: S. Maggi, Step width enhancement in a pulse-driven Josephson junction, Journal of Applied Physics vol. 79, no. 10, pp. 7860--7863 (1996.
+ - bib:  Maggi:1996
+ - url:  https://www.researchgate.net/publication/224485645_Step_width_enhancement_in_a_pulse-driven_Josephson_junction
+ - doi:  10.1063/1.362395
+
+# Don't forget to surround abstract with double quotes
+abstract: "When I read about the Ten Years Challenge, it was a matter of seconds to decide to participate in the contest with the replication of a work on the numerical simulation of a Josephson junction driven by a train of microwave pulses.
+The experience has been exceptionally instructive and all considered much easier than I initially thought.
+The paper describes the tools and tricks used for the replication and the lessons learned from this work.
+Among them, keeping good and detailed documentation and using of tools and languages that do not fall into oblivion after one or two releases."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Physics
+
+# Coding language (main one only if several)
+language: Fortran
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/23
+
+contributors:
+  - name: Nicolas P. Rougier
+    orcid: 0000-0002-6972-589X
+    role: editor
+  - name: Pierre de Buyl
+    orcid: 0000-0002-6640-6463
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  March 1, 2020
+  - accepted:  June 19 2020
+  - published: June 29, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 10 # Article number will be automatically assigned during publication
+  - doi: 10.5281/zenodo.3922195
+  - url: https://zenodo.org/record/3922195/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1
