@@ -1,0 +1,132 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[¬Rp] Reproducibility of 'Poincaré dodecahedral space parameter estimates'"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+authors:
+  - name: Boudewijn F. Roukema
+    orcid: 0000-0002-3772-0250
+    email: boud astro.uni.torun.pl
+    affiliations: 1,2,*
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Institute of Astronomy, Faculty of Physics, Astronomy and Informatics, Nicolaus Copernicus University
+    address: Grudziadzka 5, 87-100 Toruń, Poland
+
+  - code:    2
+    name:    Univ Lyon, Ens de Lyon, Univ Lyon1, CNRS, Centre de Recherche Astrophysique de Lyon UMR5574
+    address: F–69007, Lyon, France
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: fortran, cosmology
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://codeberg.org/boud/0807.4260
+  - doi:
+  - swh: swh:1:dir:4f1fe8cf5a01bb4637e31ea938eaa5bc25a2b87b
+
+# Data URL and DOI (optional if no data)
+data:
+  - url: https://lambda.gsfc.nasa.gov/data/map/dr3/dfp/wmap_ilc_5yr_v3.fits
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Roukema, B. F.; Buliński, Z.; Gaudin, N. E., 2008, Poincaré dodecahedral space parameter estimates, Astronomy and Astrophysics, 492, 657-673 # Full textual citation
+ - bib: RBG08 # Bibtex key (if any) in your bibliography file
+ - url: https://ui.adsabs.harvard.edu/link_gateway/2008A%26A...492..657R/PUB_PDF # URL to the PDF, try to link to a non-paywall version
+ - doi: 10.1051/0004-6361:200810685 # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+
+abstract: "Is a scientific research paper based on (i) public, online
+          observational data files and (ii) providing free-licensed
+          software for reproducing its results easy to reproduce by
+          the same author a decade later? This paper attempts to
+          reproduce a cosmic topology observational paper published in
+          2008 and satisfying both criteria (i) and (ii). The
+          reproduction steps are defined formally in a free-licensed
+          git repository package ``0807.4260'' and qualitatively in
+          the current paper. It was found that the effort in upgrading
+          the Fortran 77 code at the heart of the software, interfaced
+          with a C front end, and originally compiled with g77,
+          in the content of the contemporary gfortran compiler,
+          risked being too great to be justified on any short time
+          scale. In this sense, the results of RBG08 are not as
+          reproducible as they appeared to be, despite both (i) data
+          availability and (ii) free-licensing and public availability of
+          the software. The software and a script to reproduce the
+          steps of this incomplete reproduction are combined in a new
+          git repository named 0807.4260, following the ArXiv identity
+          code of RBG08."
+
+# Bibliography file (yours)
+bibliography: RBG08_rep.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+#  * Reproduction
+type: Reproduction
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Astronomy
+
+# Coding language (main one only if several)
+language: fortran
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: https://github.com/ReScience/submissions/issues/41
+
+contributors:
+  - name: Pierre de Buyl
+    orcid: 0000-0002-6640-6463
+    role: editor
+  - name: Konrad Hinsen
+    orcid: 0000-0003-0330-9428
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor (except for "drafted", which should be blanked before submission)
+dates:
+  - received: May 5, 2020
+  - accepted: June 30, 2020
+  - published: July 14, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 11 # Article number will be automatically assigned during publication
+  - doi: 10.5281/zenodo.3956058   # DOI from Zenodo
+  - url: https://zenodo.org/record/3956058/files/Roukema_ReSciC2020.pdf   # Final PDF URL (Zenodo or rescience website?)
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1
