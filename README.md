@@ -12,17 +12,17 @@ Have these two files ready before cloning this repository.
 
 There are 5 parts to publishing the article. 
 
-| Step | What it does |
+| Part | What it does |
 |:--|:--|
 | [Set up credentials](#set-up-credentials)  | Get setup to programmatically submit to Zenodo |
-| [Pre-publish the paper](#pre-publish-the-paper) | Reserves the DOI  |
+| [Pre-publish the paper](#pre-publish-the-paper) | Reserve the DOI  |
 | [Update the metadata](#update-the-metadata) | Add volume, issue, page, doi to the paper & generate new pdf |
 | [Publish the paper](#publish-the-paper) | Make the final Zenodo deposit |
 | [Update the website](#website-update) | Enter bib information for the website  |
 
 
 
-### 14 steps to publish a ReScience article
+### 14 steps to publishing a ReScience article
 
 1\. Clone this repository locally.  
 2\. Copy the authors `metadata.yaml` and `article.pdf` into this folder
