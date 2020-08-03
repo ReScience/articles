@@ -55,7 +55,7 @@ If you copy these in your bash profile you wont have to look for them again. We 
 
 This step reserves the DOI for the paper, allowing you to update metadata before final publication. 
 
-4.\ Run the [process.py](process.py) script using the provided metadata
+4\. Run the [process.py](process.py) script using the provided metadata
 file. It requires Python 3 plus the libraries [PyYAML](https://pyyaml.org/), [Requests](https://requests.kennethreitz.org/), and [dateutil](https://dateutil.readthedocs.io/en/stable/).
 
 First run on the sandbox server to check everything is OK:
@@ -67,7 +67,7 @@ Article DOI: 10.xxxx/zenodo.xxxxx
 Article URL: https://sandbox.zenodo.org/record/xxxxxx/file/article.pdf
 ```
 
-5.\ Did this work? Were there any problems? If there were no problems, then use the production server using the `--zenodo` switch instead of the `--sandbox` switch.
+5\. Did this work? Were there any problems? If there were no problems, then use the production server using the `--zenodo` switch instead of the `--sandbox` switch.
 
 ```bash
 $ ./process.py --zenodo --metadata metadata.yaml --pdf article.pdf
