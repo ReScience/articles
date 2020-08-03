@@ -1,6 +1,6 @@
 ## Publishing a ReScience C article
 
-Congrats on accepting a ReScience article for publication! Follow the steps below to complete the metadata, submit to Zenodo, and get the final article published.
+This document is intended for ReScience editors. Congrats on accepting a ReScience article for publication! If you're new at editing, this document will guide you through all the necessary steps.  Follow the steps below to complete the metadata, submit to Zenodo, and get the final article published.
 
 ### What you will need to begin
 - The article metadata file (`metadata.yaml`) from the author's repository.   At this time the metadata file should **will be missing** the article DOI, number and URL.  This is expected and something you will fix over the coming steps.
@@ -14,11 +14,11 @@ There are 5 parts to publishing the article.
 
 | Step | What it does |
 |:--|:--|
-| Set up credentials  | Get setup to programmatically submit to Zenodo |
-| Pre-publish the paper | Reserves the DOI  |
-| Update the metadata | Add volume, issue, page, doi to the paper & generate new pdf |
-| Publish the paper | Make the final Zenodo deposit |
-| Update the website | Enter bib information for the website  |
+| [Set up credentials](#set-up-credentials)  | Get setup to programmatically submit to Zenodo |
+| [Pre-publish the paper](#pre-publish-the-paper) | Reserves the DOI  |
+| [Update the metadata](#update-the-metadata) | Add volume, issue, page, doi to the paper & generate new pdf |
+| [Publish the paper](#publish-the-paper) | Make the final Zenodo deposit |
+| [Update the website](#website-update) | Enter bib information for the website  |
 
 
 
