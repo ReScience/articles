@@ -1,6 +1,6 @@
 ## Publishing a ReScience C article
 
-This document is intended for ReScience editors. Congrats on accepting a ReScience article for publication! If you're new at editing, this document will guide you through all the necessary steps.  Follow the steps below to complete the metadata, submit to Zenodo, and get the final article published.
+This document is intended for ReScience editors. Congrats on accepting a ReScience article for publication! If you're new at editing, this document will guide you through all the necessary steps. If you are a seasoned editor, this will be a handy reference to any steps you may have forgotten. Follow the steps below to complete the metadata, submit to Zenodo, and get the final article published.
 
 ### What you will need to begin
 - The article metadata file (`metadata.yaml`) from the author's repository.   At this time the metadata file should **will be missing** the article DOI, number and URL.  This is expected and something you will fix over the coming steps.
