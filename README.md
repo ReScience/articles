@@ -6,7 +6,7 @@ This document is intended for ReScience editors. Congrats on accepting a ReScien
 - The article metadata file (`metadata.yaml`) from the author's repository.   At this time the metadata file should **will be missing** the article DOI, number and URL.  This is expected and something you will fix over the coming steps.
 - The final article itself (`article.pdf`)
 
-Have these two files ready before cloning this repository. 
+Have these two files ready before cloning this repository. This would also be a good time to ask reviewers to share their [ORCIDs](https://orcid.org/) for the metadata. You can do this in the review issue.
 
 ### Publishing the article
 
@@ -92,7 +92,7 @@ different articles.
 
 8\. Then add these two bits of information (volume and article number) along with the Zenodo DOI and URL to `metadata.yaml`. 
 
-You should complete the missing information and verify the whole file before moving on. The information you must add is:
+You should complete the missing information and verify the whole file before moving on. The information you must add are:
   - DOI (from Zenodo)
   - article URL (from Zenodo)
   - contributors (reviewers and editors), with ORCIDs
