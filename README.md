@@ -3,8 +3,8 @@
 This document is intended for ReScience editors. Congrats on accepting a ReScience article for publication! If you're new at editing, this document will guide you through all the necessary steps. If you are a seasoned editor, this will be a handy reference to any steps you may have forgotten. Follow the steps below to complete the metadata, submit to Zenodo, and get the final article published.
 
 ### What you will need to begin
-- The article metadata file (`metadata.yaml`) from the author's repository.   At this time the metadata file should **will be missing** the article DOI, number and URL.  This is expected and something you will fix over the coming steps.
-- The final article itself (`article.pdf`)
+- The article metadata file (`metadata.yaml`) from the author's repository.   At this time the metadata file **will be missing** the article DOI, number and URL.  This is expected and something you will fix over the coming steps.
+- The near final article itself (`article.pdf`)
 
 Have these two files ready before cloning this repository. This would also be a good time to ask reviewers to share their [ORCIDs](https://orcid.org/) for the metadata. You can do this in the review issue.
 
@@ -48,7 +48,7 @@ And to check it was set correctly:
 echo $ZENODO_SANDBOX_TOKEN
 echo $ZENODO_TOKEN
 ```
-If you copy these in your bash profile you wont have to look for them again. We advise you to **first test the procedure** on the sandbox server using the `--sandbox` switch. More on this in the next step.
+If you copy these into your bash profile you won't have to look for them again. We advise you to **first test the procedure** on the sandbox server using the `--sandbox` switch. More on this in the next step.
 
 
 ### Pre-publish the paper
@@ -99,7 +99,7 @@ You should complete the missing information and verify the whole file before mov
   - acceptance and publication date
   - issue, volume, and article numbers.
 
-9\.  Pull request just the `metadata.yaml` back to the author's repo (this will mean copying this file back to the author repo fork). Once the pull-request is merged, have them `Make` a new `article.pdf`. The PDF will now contain the volume, article number and DOI.
+9\.  Pull request just the `metadata.yaml` back to the author's repo (this will mean copying this file back to the author repo fork). Once the pull-request is merged, ask them to prepare a new `article.pdf`. The PDF will now contain the volume, article number and DOI.
 
 10\. Copy the newly updated `article.pdf` and `metadata.yaml` back to this repo.
 
