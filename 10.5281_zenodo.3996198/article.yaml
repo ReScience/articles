@@ -1,0 +1,112 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[�Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "Re ReScience challenge: Geographical Trends in the Water Chemistry of Wetlands in the South-Western Cape Province, South Africas"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+authors:
+  - name: Michael Silberbauer
+    orcid: 0000-0001-9822-4149
+    email: Michael.Silberbauer@gmail.com
+    affiliations: 1,*
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:   "Retired since 2020-01-31: formerly Resource Quality Information Services"
+    address: Pretoria, South Africa
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: water chemistry, maucha, wetland, data visualisation, pascal
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url:
+  - doi:
+  - swh: "swh:1:rev:95a00613e591becafb911c97d9995a8cca68002d"
+
+# Data URL and DOI (optional if no data)
+data:
+  - url: http://www.riv.co.za/wv/data/CHEMDATA.DAT
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Silberbauer, M.J. and King, J.M., 1991. Geographical Trends in the Water Chemistry of Wetlands in the South-Western Cape Province, South Africa. Southern African Journal of Aquatic Sciences, 17 (1/2), 82�88.
+ - bib:  # Bibtex key (if any) in your bibliography file
+ - url:  http://dx.doi.org/10.1080/10183469.1991.9631315 # URL to the PDF, sadly could not find a non-paywall version
+ - doi:  10.1080/10183469.1991.9631315
+
+# Don't forget to surround abstract with double quotes
+abstract: "A map of water quality with Maucha ionic diagrams at monitoring sites
+provides a simple visual comparison of the major ions in water samples.
+The ratios of the major ions provide an overall impression of the suitability of water for biota.
+Clusters of similarly shaped symbols highlight geographical distributions that may warrant further investigation.
+When first developed in the 1920s, the symbols were calculated and drawn by hand, a time-consuming process that limited their usefulness. Construction of the symbols is simplified using a computer program, and I describe an early procedure written in Turbo Pascal.
+The automated production of symbols allows for enhancements such as colour-coding of the ions and scaling in proportion to the total ion concentration.
+This Pascal program was the basis for further developments during the past thirty years, in geographical information systems and in R."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Reproduction
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Aquatic Science
+
+# Coding language (main one only if several)
+language: Pascal
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: "https://github.com/ReScience/submissions/issues/25"
+
+contributors:
+  - name: Olivia Guest
+    orcid: 0000-0002-1891-0972
+    role: editor
+  - name: Nicolas P. Rougier
+    orcid: 0000-0002-6972-589X
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+# This information will be provided by the editor
+dates:
+  - received:  March 31, 2020
+  - accepted: July 27, 2020
+  - published: August 22, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 13 # Article number will be automatically assigned during publication
+  - doi:  10.5281/zenodo.3996198   # DOI from Zenodo
+  - url:  https://zenodo.org/record/3996198/files/article.pdf  # Final PDF URL (Zenodo or rescience website?)
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1
