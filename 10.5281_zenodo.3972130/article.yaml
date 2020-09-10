@@ -1,0 +1,114 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Rp] Dendrodendritic inhibition and simulated odor responses in a detailed olfactory bulb network model"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Andrew P. Davison
+    orcid: 0000-0002-4793-7541
+    email: andrew.davison@cnrs.fr
+    affiliations: 1,*
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Université Paris-Saclay, CNRS, Institut des neurosciences Paris-Saclay
+    address: 91190, Gif-sur-Yvette, France
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience c, NEURON simulator, Hoc
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/apdavison/bulbnet-reproduction
+  - doi:
+  - swh: swh:1:rev:0899bc8af36b50d8cdf5d062562d2721f4602703
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: "Davison A.P., Feng J. and Brown D. (2003) Dendrodendritic inhibition and simulated odor responses in a detailed olfactory bulb network model. Journal of Neurophysiology 90: 1921–1935"
+ - bib:  dendrodendritic-inhibition-simulated-odor-responses-detailed-olfactory-bulb-network-model  # Bibtex key (if any) in your bibliography file
+ - url:  https://journals.physiology.org/doi/pdf/10.1152/jn.00623.2002 # URL to the PDF, try to link to a non-paywall version
+ - doi:  http://doi.org/10.1152/jn.00623.2002
+
+# Don't forget to surround abstract with double quotes
+abstract: "This article reports on the experience of reproducing a computational modelling study I
+originally carried out as part of my PhD studies, which was published as Davison, Feng,
+and Brown (2003). The reproduced figures were not quantitatively identical to the originals
+due to differences in the sequences of random numbers obtained, but population responses
+were quantitatively very similar, and the major findings of the original study
+are unchanged in the reproduction. We attribute the relative ease of the reproduction to the
+use of the NEURON simulator and the Gnuplot graphics application, both of which have
+been continuously maintained since the original publication, and have largely preserved
+backwards compatibility."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Reproduction
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Computational Neuroscience
+
+# Coding language (main one only if several)
+language: Hoc
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: https://github.com/ReScience/submissions/issues/37
+
+contributors:
+  - name: Tiziano Zito
+    orcid:
+    role: editor
+  - name: Nicolas P. Rougier
+    orcid: 0000-0002-6972-589X
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  April 30, 2020
+  - accepted:  August 4, 2020
+  - published: August 5, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 14
+  - doi: 10.5281/zenodo.3972130
+  - url: https://zenodo.org/record/3972130/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1

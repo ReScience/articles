@@ -1,0 +1,114 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Rp] Reproducibility report: Identifying essential genes by mutagenesis"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: "Karl W. Broman"
+    orcid: 0000-0002-4914-6671
+    email: broman@wisc.edu
+    affiliations: 1,*
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    "Department of Biostatistics and Medical Informatics, University of Wisconsin--Madison"
+    address: "Madison, Wisconsin, USA"
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience c, ten years reproducibility challenge, R, MCMC, tuberculosis, Bayes
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/kbroman/Paper_ReScience2020/
+  - doi: 10.5281/zenodo.3671998
+  - swh: swh:1:dir:277cad9553dc627f9a4047f38fc19ca1e76aee8c
+
+# Data URL and DOI (optional if no data)
+data:
+  - url: https://github.com/kbroman/Paper_ReScience2020/
+  - doi: 10.5281/zenodo.3671998
+
+# Information about the original article that has been replicated
+replication:
+ - cite: "Lamichhane G, Zignol M, Blades NJ, Geiman DE, Dougherty A, Broman KW, Bishai WR (2003)  A post-genomic method for predicting essential genes at subsaturation levels of mutagenesis: application to \\emph{Mycobacterium tuberculosis}.  Proc Natl Acad Sci USA 100:7213-7218"
+ - bib:  lamichhane2003
+ - url:  https://www.pnas.org/content/pnas/100/12/7213.full.pdf
+ - doi:  10.1073/pnas.1231432100
+
+# Don't forget to surround abstract with double quotes
+abstract: "As part of the ReScience Ten Years Reproducibility Challenge, I sought to reproduce the
+    analyses in Lamichhane et al. (2003). The bulk of the code and data were quickly identified,
+    though there were a number of challenges in reconstructing the analysis steps. There was little
+    documentation and rather quirky file organization. And the code for one figure was not present
+    in the main project directory but rather was discovered in a separate directory with presentation
+    slides. Nevertheless, the bulk of the results could be reproduced to within Monte Carlo sampling
+    error, with just one small change to the code to avoid errors due to a change in R. One of the
+    paper's figures, however, could not be reproduced as the code for the computer simulations it
+    presented could not be found."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Reproduction / Ten Years Reproducibility Challenge
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Genetics
+
+# Coding language (main one only if several)
+language: R
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url:
+
+contributors:
+  - name: "Karthik Ram"
+    orcid: 0000-0002-0233-1757
+    role: editor
+  - name: "Leah Wang"
+    orcid: 0000-0001-5905-8061
+    role: reviewer
+  - name: "Peter Carbonetto"
+    orcid: 0000-0003-1144-6780
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  17 Feb 2020
+  - accepted:  15 Jul 2020
+  - published: 24 Jul 2020
+
+# This information will be provided by the editor
+article:
+  - number: 12 # Article number will be automatically assigned during publication
+  - doi:   10.5281/zenodo.3959516 # DOI from Zenodo
+  - url:  https://zenodo.org/record/3959516/files/article.pdf  # Final PDF URL (Zenodo or rescience website?)
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue: 1
