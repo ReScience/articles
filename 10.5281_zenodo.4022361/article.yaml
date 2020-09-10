@@ -1,0 +1,108 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Hippocampal Phase-Amplitude Coupling unearthed again"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+authors:
+
+  - name: Harald Hentschke
+    orcid: 0000-0003-0930-1603
+    email: hhntschk@gmail.com
+    affiliations: 1,*      # * is for contact author
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Freelancing Data Scientist
+    address: Berlin, Germany
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience c, Matlab, hippocampus, cross-frequency coupling, phase-amplitude coupling, theta oscillations, gamma oscillations, cholinergic system, atropine
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/hhentschke/ReScience_10yrReproChallenge/tree/v.1.0.0
+  - doi: 10.5281/zenodo.4021389
+  - swh:
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Hentschke, H., Perkins, M.G., Pearce, R.A., & Banks, M.I. (2007) Muscarinic blockade weakens interaction of gamma with theta rhythms in mouse hippocampus. Eur.J.Neurosci., 26, 1642–1656.
+ - bib:  # Bibtex key (if any) in your bibliography file
+ - url:  https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1460-9568.2007.05779.x
+ - doi:  10.1111/j.1460-9568.2007.05779.x
+
+# Don't forget to surround abstract with double quotes
+abstract: "This is the description of a partly successful replication of a study of electrophysiological brain signals
+implemented 15 years ago in Matlab, motivated by ReScience's Ten Years Reproducibility Challenge. In the original study, the phenomenon of phase-amplitude coupling (PAC) was investigated in the hippocampus, a brain structure pivotal for navigation and the formation of memory."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Neuroscience
+
+# Coding language (main one only if several)
+language: Matlab
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: https://github.com/ReScience/submissions/issues/30
+
+contributors:
+  - name: Olivia Guest
+    orcid: 0000-0002-1891-0972
+    role: editor
+  - name: Tom Donoghue
+    orcid: 0000-0001-5911-0472
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  April 21, 2020
+  - accepted: September 9, 2020
+  - published: September 10, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 3 # Article number will be automatically assigned during publication
+  - doi:  10.5281/zenodo.4022361  # DOI from Zenodo
+  - url: https://zenodo.org/record/4022361/files/article.pdf   # Final PDF URL (Zenodo or rescience website?)
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  3
