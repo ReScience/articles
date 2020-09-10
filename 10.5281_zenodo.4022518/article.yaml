@@ -1,0 +1,132 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Chaos in a Three-Species Food Chain"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Gabriel Dansereau
+    orcid: 0000-0002-2212-3584
+    email: gabriel.dansereau@umontreal.ca
+    affiliations: 1,*
+
+  - name: Francis Banville
+    orcid: 0000-0001-9051-0597
+    email:
+    affiliations: 1
+
+  - name: Elodie Basque
+    orcid: 0000-0003-4741-6751
+    email:
+    affiliations: 1
+
+  - name: Andrew MacDonald
+    orcid: 0000-0003-1162-169X
+    email:
+    affiliations: 1
+
+  - name: Timothée Poisot
+    orcid: 0000-0002-0735-5184
+    email: timothee.poisot@umontreal.ca
+    affiliations: 1
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Université de Montréal
+    address: Montréal, Canada
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience, ecological modelling, food chain, chaos, julia
+
+# Code URL and DOI (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo,
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/BIO6032/2019_replication_HastingsPowell_1991/
+  - doi: 10.5281/zenodo.4012772
+
+# Date URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Hastings, A., & Powell, T. (1991). Chaos in a Three-Species Food Chain. Ecology, 72(3), 896–903. https://doi.org/10.2307/1940591
+ - bib: hastings1991
+ - url:  https://esajournals.onlinelibrary.wiley.com/doi/abs/10.2307/1940591
+ - doi: 10.2307/1940591
+
+# Don't forget to surround abstract with double quotes
+abstract: "
+Hastings & Powell's model describing chaos in a three-species food chain is a classic in
+ecological modelling.
+Here, we provide a successul reproduction of the model and results from the original
+article, implemented in Julia v1.3.1 and openly accessible online.
+The main challenge we faced was the absence of the initial conditions from the
+original article. Our reproduction nonetheless displays the same results, although with slight differences,
+and confirms chaos arising in a three species food chain in continuous time.
+"
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: ecology
+
+# Coding language (main one only if several)
+language: julia
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: https://github.com/ReScience/submissions/issues/15
+
+contributors:
+  - name: Nicolas P. Rougier
+    orcid: 0000-0002-6972-589X
+    role: editor
+  - name: Carl Boettiger
+    orcid: 0000-0002-1642-628X
+    role: reviewer
+  - name: Philipp Boersch-Supan
+    orcid: 0000-0001-6723-6833
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received: February 7, 2020
+  - accepted: September 8, 2020
+  - published: September 10, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 5
+  - doi:    10.5281/zenodo.4022518
+  - url:    https://zenodo.org/record/4022518/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name: ReScience C
+  - issn: 2430-3658
+  - volume: 6
+  - issue: 3
