@@ -1,0 +1,107 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Rp] Fluctuation domains in adaptive evolution"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: "Carl Boettiger"
+    orcid: "https://orcid.org/0000-0002-1642-628X"
+    email: "cboettig@berkeley.edu"
+    affiliations: 1,*      # * is for contact author
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    University of California, Berkeley
+    address: 130 Mulford Hall, Berkeley, CA 94720-3114 USA
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: ten years reproducibility challenge, R, C
+
+# Code URL and DOI (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo,
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/cboettig/fluctationDomains
+  - doi: 
+  - swh: swh:1:rev:e547c62fd9ae8361d601302200bbc90b26299007
+
+# Date URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Carl Boettiger, Jonathan Dushoff, Joshua S Weitz (2010). Fluctuation domains in adaptive evolution, Theoretical Population Biology 77 (1) 6-13. doi:10.1016/j.tpb.2009.10.003.
+ - bib:  Boettiger2010
+ - url:  https://arxiv.org/abs/1004.4233
+ - doi:  https://doi.org/10.1016/j.tpb.2009.10.003
+
+# Don't forget to surround abstract with double quotes
+abstract: "A stochastic ensemble simulation of evolutionary dynamics has been successfully reproduced. Simulation code was in C and could be called from wrappers implemented as an R package.  Reproduction required minor modification to the configuration files for compatibility with newer versions of the GNU Scientific Library."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+
+type: Reproduction
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Ecology
+
+# Coding language (main one only if several)
+language: C, R
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: https://github.com/ReScience/submissions/issues/16
+
+contributors:
+  - name:  Timothée Poisot
+    orcid: 0000-0002-0735-5184
+    role: editor
+  - name: Hao Ye
+    orcid: 0000-0002-8630-1458
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  February 7, 2020
+  - accepted:  September 10, 2020
+  - published: September 15, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 15 
+  - doi:    10.5281/zenodo.4081202
+  - url:    https://zenodo.org/record/4081202/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1
