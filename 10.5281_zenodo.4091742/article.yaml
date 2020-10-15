@@ -1,0 +1,104 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Rp] Reproducing \"Typographical Features for Scene Text Recognition\""
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+authors:
+  - name: Jerod Weinman
+    orcid: 0000-0002-2247-8174
+    email: jerod@acm.org
+    affiliations: 1,*
+    
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Grinnell College
+    address: Grinnell, Iowa, USA
+    
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: scene text recognition, CUDA, Matlab, C, MEX, Java
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: http://hdl.handle.net/11084/23333
+  - doi: 11084/23333
+  - swh: swh:1:dir:0c20dd08d449661bbf90f9a209c822b3aeb1edb7
+
+# Data URL and DOI (optional if no data)
+data:
+  - url: http://hdl.handle.net/11084/23336
+  - doi: 11084/23336
+
+# Information about the original article that has been replicated
+replication:
+ - cite: "Weinman, J. J. (2010, August). Typographical features for scene text recognition. In 2010 20th International Conference on Pattern Recognition (pp. 3987-3990). IEEE." # Full textual citation
+ - bib:  \fullcite{weinman10typographical} # Bibtex key (if any) in your bibliography file
+ - url:  https://weinman.cs.grinnell.edu/pubs/weinman10typographical.pdf # URL to the PDF, try to link to a non-paywall version
+ - doi:  10.1109/ICPR.2010.970 # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "This article reports on the largely successful reproduction of the author's decade-old conference paper. The original 2010 paper demonstrated that character recognition performance could be improved on difficult problems of scene text recognition by leveraging font-specific correlations between character identity and width. The work relied on a sizeable array of languages, tools, and libraries. The computation proceeded in three major phases: data synthesis, training statistical models on artificial image data and actual text data, and finally fine-tuning and running a parser with the trained models applied to the test images. Using the learned models stored from the original paper's experiments, the original parser code successfully reproduced the results exactly. The training code required minor changes to run with current host environments and libraries. Although the updated experimental results are not identical, they follow the same general trends, indicating a successfully repeated experiment."
+
+# Bibliography file (yours)
+bibliography: rescience20.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Reproduction
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Pattern Recognition
+
+# Coding language (main one only if several)
+language: Java
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/35
+
+contributors:
+  - name: Georgios Is. Detorakis
+    orcid: 0000-0001-5891-1702
+    role: editor
+  - name: Nicolas P. Rougier
+    orcid: 0000-0002-6972-589X
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received: April 30, 2020
+  - accepted: September 12, 2020
+  - published: October 15, 2020 
+
+# This information will be provided by the editor
+article:
+  - number: # Article number will be automatically assigned during publication
+  - doi:    10.5281/zenodo.4091742
+  - url:    https://zenodo.org/record/4091742/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1
