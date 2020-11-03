@@ -1,0 +1,109 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Faster Teaching via POMDP Planning"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Lukas Brückner
+    orcid: 0000-0001-6949-5820
+    email: lukas.brueckner.89@gmail.com
+    affiliations: 1,*
+
+  - name: Aurélien Nioche
+    orcid: 0000-0002-0567-2637
+    email: nioche.aurelien@gmail.com
+    affiliations: 1
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code: 1
+    name: Aalto University
+    address: Espoo, Finland
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience c, python, automated teaching, concept learning
+
+# Code URL and DOI (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo,
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/luksurious/faster-teaching
+  - doi:
+  - swh: swh:1:dir:3335796ebdc27256ec8cb381f8baf60ace85fe9d
+
+# Date URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+  - cite: "Rafferty, A. N., Brunskill, E. , Griffiths, T. L. and Shafto, P. (2016), Faster Teaching via POMDP Planning. Cogn Sci, 40: 1290-1332." # Full textual citation
+  - bib: rafferty2016faster # Bibtex key (if any) in your bibliography file
+  - url: https://www.onlinelibrary.wiley.com/doi/full/10.1111/cogs.12290 # URL to the PDF, try to link to a non-paywall version
+  - doi: 10.1111/cogs.12290 # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "We partially replicated the model described by Rafferty et al. to optimize automated teaching via POMDP planning. Teaching is formulated as a partially observable Markov decision process (POMDP) in which the teacher operates and plans actions based on the belief that reflects the learner's state. The automated teacher employs a cognitive learner model that defines how the learner's knowledge state changes. Two concept learning tasks are used to evaluate the approach: (i) a simple letter arithmetic task with the goal of finding the correct mapping between a set of letters and numbers, and (ii) a number game, where a target number concept needs to be learned. Three learner models were postulated: a memoryless model that stochastically chooses a matching concept based on the current action, a discrete model with memory that additionally matches concepts with previously seen actions and a continuous model with a probability distribution over all concepts that eliminates inconsistent concepts based on the actions. We implemented all models and both tasks, and ran simulations following the same protocol as in the original paper. We were able to replicate the results for the first task with comparable results except for one case. In the second task, our results differ more significantly. While the POMDP policies outperform the random baselines overall, a clear advantage over the policy based on maximum information gain cannot be seen. We open source our implementation in Python and extend the description of the learner models with explicit formulas for the belief update, as well as an extended description of the planning algorithm, hoping that this will help other researchers to extend this work."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Reinforcement Learning
+
+# Coding language (main one only if several)
+language: python
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: https://github.com/ReScience/submissions/issues/44
+
+contributors:
+  - name: Koustuv Sinha
+    orcid: 0000-0002-2803-9236
+    role: editor
+  - name: Emmanuel Bengio
+    orcid: 0000-0002-3257-4661
+    role: reviewer
+  - name: Amy Zhang
+    orcid: 0000-0002-4061-5582
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received: June 28, 2020
+  - accepted: November 3, 2020
+  - published: November 3, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 7 # Article number will be automatically assigned during publication
+  - doi: 10.5281/zenodo.4242943 # DOI from Zenodo
+  - url: https://zenodo.org/record/4242943/files/article.pdf # Final PDF URL (Zenodo or rescience website?)
+
+# This information will be provided by the editor
+journal:
+  - name: "ReScience C"
+  - issn: 2430-3658
+  - volume: 6
+  - issue: 3
