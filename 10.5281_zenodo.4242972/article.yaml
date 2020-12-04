@@ -1,0 +1,120 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Volume computation for polytopes: Vingt ans après"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Andreas Enge
+    email: andreas.enge@inria.fr
+    affiliations: 1,*
+    
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    INRIA, Université de Bordeaux, CNRS
+    address: LFANT, F-33400 Talence, France
+    
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience c, polytope, volume, C
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://doi.org/10.5281/zenodo.4293820
+  - doi: 10.5281/zenodo.4293820
+  - swh: 
+
+# Data URL and DOI (optional if no data)
+data:
+  - url: https://doi.org/10.5281/zenodo.4293875
+  - doi: 10.5281/zenodo.4293875
+
+# Information about the original article that has been replicated
+replication:
+ - cite: "B. Büeler, A. Enge, and K. Fukuda.
+          Exact Volume Computation for Polytopes: A Practical Study.
+	  In: Polytopes — Combinatorics and Computation.
+	  Ed. by G. Kalai and G. M. Ziegler.
+	  Vol. 29. DMV Seminar.
+	  Basel: Birkhäuser Verlag,
+	  2000,
+	  pp. 131–154" # Full textual citation
+ - bib:  BuEnFu00 # Bibtex key (if any) in your bibliography file
+ - url:  https://www.math.u-bordeaux.fr/~aenge/papers/volcomp980807.ps.gz # URL to the PDF, try to link to a non-paywall version
+ - doi:  # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "This article endeavours to reproduce the experimental study of
+           B.~Büeler, A.~Enge, K.~Fukuda:
+	   \\textit {Exact Volume Computation for Polytopes: A Practical Study},
+	   2000, in which a variety of algorithms for volume computation are
+	   applied to a variety of different higher-dimensional polytopes.
+	   The original software is used on a modern machine to redo the
+	   computations. It turns out that due to Moore's law, running times
+	   go down, but the original conclusions are still valid."
+
+# Bibliography file (yours)
+bibliography: revinci.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Discrete Mathematics
+
+# Coding language (main one only if several)
+language: C
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/27
+
+contributors:
+  - name: Thomas Arildsen
+    orcid: 0000-0003-3254-3790
+    role: editor
+  - name: Dmitrii Pasechnik
+    orcid: 0000-0002-7557-6886
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  April 10, 2020
+  - accepted:  November 3, 2020
+  - published: December 4, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 17
+  - doi:    10.5281/zenodo.4242972
+  - url:    https://zenodo.org/record/4242972/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1
