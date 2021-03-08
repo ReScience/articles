@@ -1,0 +1,103 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Reproduction of the normal and pathological dynamics in the basal ganglia-thalamo-cortical network"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Arthur Leblois
+    orcid: 0000-0002-9392-5939
+    email: arthur.leblois@u-bordeaux.fr
+    affiliations: 1
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Institut des Maladies Neurodégénératives, Université  de Bordeaux,
+             Centre National de la Recherche Scientifique, UMR 5293
+    address: Bordeaux, France
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience c, basal ganglia, dynamics, neural networks
+
+# Code URL and DOI (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo,
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/aleblois/BGdynamics2006/blob/master/Copie%20de%20simdelai2boucles_all2all_GPe.c
+  - doi:
+
+# Date URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Leblois, A., Boraud, T., Meissner, W., Bergman, H. & Hansel, D. (2006) Competition between feedback loops underlies normal and pathological dynamics in the basal ganglia. J. Neurosci., 26, 3567–3583.
+ - bib:  # Bibtex key (if any) in your bibliography file
+ - url:  https://www.jneurosci.org/content/26/13/3567
+ - doi:  https://doi.org/10.1523/JNEUROSCI.5050-05.2006
+
+# Don't forget to surround abstract with double quotes
+abstract: "In 2006, during my PhD, I published my first modelling paper showing that the normal and pathological dynamics of the basal ganglia-thalamo-cortical network could be understood from a theoretical standpoint relying on a simplified model of the circuit. I recently was told by a colleague about a challenge to reproduce modelling studies over 10-years old. I was quite confident I could reproduce the results of my 2006 paper, which was based on a combination of analytical calculation and computer simulations programmed in C with figures produced through Matlab custom code. All the code was still saved on my computer (although in a simple but relatively messy file-and-folder organisation), and I went through my personal archives and re-run ancient code until I could provide again the results described here. "
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Computational Neuroscience
+
+# Coding language (main one only if several)
+language: C
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: https://github.com/ReScience/submissions/issues/28
+
+contributors:
+  - name: Benoît Girard
+    orcid: 0000-0002-8117-7064
+    role: editor
+  - name: Benoît Girard
+    orcid: 0000-0002-8117-7064
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  November 1, 2018
+  - accepted:  June 30, 2020
+  - published: February 16, 2021
+
+# This information will be provided by the editor
+article:
+  - number: 19 # Article number will be automatically assigned during publication
+  - doi:    10.5281/zenodo.4543356 # DOI from Zenodo
+  - url:    https://zenodo.org/record/4543356/files/article.pdf # Final PDF URL (Zenodo or rescience website?)
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1
