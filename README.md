@@ -10,19 +10,20 @@ Have these two files ready before cloning this repository. This would also be a 
 
 ### Publishing the article
 
-There are 5 parts to publishing the article. 
+There are 6 parts to publishing the article. 
 
 | Part | What it does |
 |:--|:--|
 | [Set up credentials](#set-up-credentials)  | Get setup to programmatically submit to Zenodo |
+| [Update the metadata 1](#update-the-metadata) | Add editor, reviewers, dates of submission, acceptance & publication |
 | [Pre-publish the paper](#pre-publish-the-paper) | Reserve the DOI  |
-| [Update the metadata](#update-the-metadata) | Add volume, issue, page, doi to the paper & generate new pdf |
+| [Update the metadata 2](#update-the-metadata) | Add volume, issue, page, doi to the paper & generate new pdf |
 | [Publish the paper](#publish-the-paper) | Make the final Zenodo deposit |
 | [Update the website](#website-update) | Enter bib information for the website  |
 
 
 
-### 14 steps to publishing a ReScience article
+### 15 steps to publishing a ReScience article
 
 1\. Clone this repository locally.  
 2\. Copy the authors `metadata.yaml` and `article.pdf` into this folder
@@ -50,12 +51,18 @@ echo $ZENODO_TOKEN
 ```
 If you copy these into your bash profile you won't have to look for them again. We advise you to **first test the procedure** on the sandbox server using the `--sandbox` switch. More on this in the next step.
 
+### Update the metadata 1
+
+4\. Complete the `metadata.yaml`: 
+  - Add the submission (if not already there), as well as acceptance and publication dates in the dates section. This is mandatory for steps 5 to 7 to work properly.
+  - Check that the code, data and replication sections have been correctly filled (for example, add the often missing DOI of the replicated paper).
+  - Complete the information about the contributors (reviewers and editors), with ORCIDs.
 
 ### Pre-publish the paper
 
 This step reserves the DOI for the paper, allowing you to update metadata before final publication. 
 
-4\. Run the [process.py](process.py) script using the provided metadata
+5\. Run the [process.py](process.py) script using the provided metadata
 file. It requires Python 3 plus the libraries [PyYAML](https://pyyaml.org/), [Requests](https://requests.kennethreitz.org/), and [dateutil](https://dateutil.readthedocs.io/en/stable/).
 
 First run on the sandbox server to check everything is OK:
@@ -67,7 +74,7 @@ Article DOI: 10.xxxx/zenodo.xxxxx
 Article URL: https://sandbox.zenodo.org/record/xxxxxx/file/article.pdf
 ```
 
-5\. Did this work? Were there any problems? If there were no problems, then use the production server using the `--zenodo` switch instead of the `--sandbox` switch.
+6\. Did this work? Were there any problems? If there were no problems, then use the production server using the `--zenodo` switch instead of the `--sandbox` switch.
 
 ```bash
 $ ./process.py --zenodo --metadata metadata.yaml --pdf article.pdf
@@ -76,37 +83,35 @@ Article DOI: 10.xxxx/zenodo.xxxxx
 Article URL: https://zenodo.org/record/xxxxxx/file/article.pdf
 ```
 
-6\. If no errors were returned, you have successfully reserved a DOI! Next we’ll grab an issue, volume and article numbers.
+7\. If no errors were returned, you have successfully reserved a DOI! Next we’ll grab an issue, volume and article numbers.
 
 ```
 NOTE: This DOI will not resolve anywhere. This behavior is expected
 ```
 
-### Update the metadata
+### Update the metadata 2
 
 In this step, you'll update `metadata.yaml`, pull request the file back to the author, generate a new PDF (which will now contain the volume, issue, page, doi information), and copy that back here.
 
-7\. Look at the last number on  [this GitHub issue](https://github.com/ReScience/ReScience/issues/48) and choose the next one in the series. Post a comment to claim that issue for your article. This comment
+8\. Look at the last number on  [this GitHub issue](https://github.com/ReScience/ReScience/issues/48) and choose the next one in the series. Post a comment to claim that issue for your article. This comment
 serves to avoid that two editors assign the same numbers to two
 different articles.
 
-8\. Then add these two bits of information (volume and article number) along with the Zenodo DOI and URL to `metadata.yaml`. 
+9\. Then add these two bits of information (volume and article number) along with the Zenodo DOI and URL to `metadata.yaml`. 
 
 You should complete the missing information and verify the whole file before moving on. The information you must add are:
   - DOI (from Zenodo)
   - article URL (from Zenodo)
-  - contributors (reviewers and editors), with ORCIDs
-  - acceptance and publication date
   - issue, volume, and article numbers.
 
-9\.  Pull request just the `metadata.yaml` back to the author's repo (this will mean copying this file back to the author repo fork). Once the pull-request is merged, ask them to prepare a new `article.pdf`. The PDF will now contain the volume, article number and DOI.
+10\.  Pull request just the `metadata.yaml` back to the author's repo (this will mean copying this file back to the author repo fork). Once the pull-request is merged, ask them to prepare a new `article.pdf`. The PDF will now contain the volume, article number and DOI.
 
-10\. Copy the newly updated `article.pdf` and `metadata.yaml` back to this repo.
+11\. Copy the newly updated `article.pdf` and `metadata.yaml` back to this repo.
 
   
 ### Publish the paper
 
-11\. In order to publish the **final** article, you'll need to run the
+12\. In order to publish the **final** article, you'll need to run the
 [publish.py](publish.py) script:
 
 ```bash
@@ -145,15 +150,15 @@ git push origin <DOI>
 ```
 
 
-12\. Discard any changes on the master branch.
+13\. Discard any changes on the master branch.
 
 ### Website update
 
 To have the new article to appear on the website, you'll need to prepend the newly created bibtex entry.
 
-13\. Finally, copy the contents of `article.bib` from the doi folder for this paper into [rescience.github.io/_bibliography/published.bib](https://github.com/ReScience/rescience.github.io/blob/sources/_bibliography/published.bib) and send a final pull request (You can do this from the web). 
+14\. Finally, copy the contents of `article.bib` from the doi folder for this paper into [rescience.github.io/_bibliography/published.bib](https://github.com/ReScience/rescience.github.io/blob/sources/_bibliography/published.bib) and send a final pull request (You can do this from the web). 
 
-14\. Now you’re done! 🎉 🚀
+15\. Now you’re done! 🎉 🚀
 
 ### Updating an already published article
 
