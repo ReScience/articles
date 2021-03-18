@@ -1,0 +1,116 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Drivers of evapotranspiration from boreal wildfires"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: "Ben Bond-Lamberty"
+    orcid: 0000-0001-9525-4633
+    email: bondlamberty@pnnl.gov
+    affiliations: 1,*
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    "Joint Global Change Research Institute, Pacific Northwest National Laboratory"
+    address: "College Park, MD, USA"
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: Ten Years Reproducibility Challenge, R, Hydrology, Wildfire
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/bpbond/ten-years-paper33
+  - doi:
+  - swh: swh:1:rev:b8fe7506c23641ff7bc43deed4573feaa6d03947
+
+# Data URL and DOI (optional if no data)
+data:
+  - url: https://github.com/bpbond/ten-years-paper33/blob/master/ET.csv
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: "Bond-Lamberty B, Peckham SD, Gower ST, Ewers BE (2009) Effects of fire on regional evapotranspiration in the central Canadian boreal forest.  Glob Change Biol 15:1242-1254"
+ - bib:  bondlamberty2009
+ - url:  https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2486.2008.01776.x
+ - doi:  10.1111/j.1365-2486.2008.01776.x
+
+# Don't forget to surround abstract with double quotes
+abstract: "As part of the ReScience Ten Years Reproducibility
+    Challenge, I sought to reproduce the analyses in Bond-Lamberty et
+    al. (2009). The R program file for this paper was available,
+    although it was unpublished and undocumented, but a full output
+    file from the original analysis was available. The results were
+    essentially reproduced, with one or two minor changes in e.g. the
+    sixth decimal place of a few numbers. The original choice to use
+    only base R functions imposed limitations but also enhanced
+    reproducibility, given that software's historical emphasis on
+    backward compatibility."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Reproduction 
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Earth sciences
+
+# Coding language (main one only if several)
+language: R
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: https://github.com/ReScience/submissions/issues/40
+
+contributors:
+  - name: Karthik Ram
+    orcid: 0000-0002-0233-1757
+    role: editor
+  - name: Jaclyn Hatala Matthes
+    orcid: 0000-0001-8999-8062
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received: 04 May 2020
+  - accepted: 09 November 2020
+  - published: 18 March 2021
+
+# This information will be provided by the editor
+article:
+  - number: 21
+  - doi: 10.5281/zenodo.4617894
+  - url: https://zenodo.org/record/4617894/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1
+  
