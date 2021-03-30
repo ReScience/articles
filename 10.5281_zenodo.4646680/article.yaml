@@ -1,0 +1,130 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Assortative matching and search"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Félix Geoffroy
+    orcid: 0000-0001-9800-4728
+    email: felix.geoffroy.fr@gmail.com
+    affiliations: 1,*
+
+  # - name: Nicolas P. Rougier
+  #   orcid: 0000-0002-6972-589X
+  #   email: Nicolas.Rougier@inria.fr
+  #   affiliations: 3,4,5,*      # * is for contact author
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Department of Evolutionary Theory, Max Planck Institute for Evolutionary Biology
+    address: August-Thienemann-Straße 2, 24306 Plön, Germany
+
+  # - code:    2
+  #   name:    Synchrotron SOLEIL, Division Expériences
+  #   address: Gif sur Yvette, France
+  #
+  # - code:    3
+  #   name:    INRIA Bordeaux Sud-Ouest
+  #   address: Bordeaux, France
+  #
+  # - code:    4
+  #   name:    LaBRI, Université de Bordeaux, Institut Polytechnique de Bordeaux,
+  #            Centre National de la Recherche Scientifique, UMR 5800
+  #   address: Talence, France
+  #
+  # - code:    5
+  #   name:    Institut des Maladies Neurodégénératives, Université  de Bordeaux,
+  #            Centre National de la Recherche Scientifique, UMR 5293
+  #   address: Bordeaux, France
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: Search-and-matching, markets, biological markets, game theory, Python
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/fgeoffroy/-Re-Assortative-matching-and-search
+  - doi:
+  - swh: swh:1:dir:c4b7d774ab458f90c433e321ab969d3f12e410de
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Shimer, R., and Smith, L. (2000). Assortative matching and search. Econometrica, 68(2), 343–369. # Full textual citation
+ - bib: shimer_assortative_2000 # Bibtex key (if any) in your bibliography file
+ - url: https://www.researchgate.net/profile/Lones_Smith2/publication/2371892_Assortative_Matching_and_Search/links/58befff9aca272bd2a3acec0/Assortative-Matching-and-Search.pdf # URL to the PDF, try to link to a non-paywall version
+ - doi: 10.1111/1468-0262.00112 # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: ""
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Game Theory
+
+# Coding language (main one only if several)
+language: Python 3
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: https://github.com/ReScience/submissions/issues/47
+
+contributors:
+  - name: Nicolas P. Rougier
+    orcid: 0000-0002-6972-589X
+    role: editor
+  - name:  Dirk Eddelbuettel
+    orcid: 0000-0001-6419-907X
+    role: reviewer
+  - name:  Aurélien Nioche
+    orcid: 0000-0002-0567-2637
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received: February 2, 2021
+  - accepted: March 15, 2021
+  - published: March 24, 2021
+
+# This information will be provided by the editor
+article:
+  - number: 2
+  - doi:   10.5281/zenodo.4646680
+  - url:   https://zenodo.org/record/4646680/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 7
+  - issue:  1
