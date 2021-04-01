@@ -1,0 +1,131 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] A Neurodynamical Model for Working Memory"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Theophile Boraud
+    orcid: 0000-0003-0388-0392
+    email: theoboraud@outlook.com
+    affiliations: 1,4,* # * is for contact author
+
+  - name: Anthony Strock
+    orcid: 0000-0002-6725-561X
+    email: Anthony.Strock@inria.fr
+    affiliations: 1,2,3
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    INRIA Bordeaux Sud-Ouest
+    address: Bordeaux, France
+
+  - code:    2
+    name:    LaBRI, Université de Bordeaux, Institut Polytechnique de Bordeaux,
+             Centre National de la Recherche Scientifique, UMR 5800
+    address: Talence, France
+
+  - code:    3
+    name:    Institut des Maladies Neurodégénératives, Université  de Bordeaux,
+             Centre National de la Recherche Scientifique, UMR 5293
+    address: Bordeaux, France
+
+  - code:    4
+    name:    Department of Computer Science, University of Warwick
+    address: Coventry, United Kingdoms
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: Recurrent Neural Networks, Echo State Networks, Working Memory
+
+# Code URL and DOI (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo,
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/theoboraud/JaegerESN
+  - doi:
+
+# Date URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Pascanu, R., & Jaeger, H. (2011). A neurodynamical model for working memory. Neural networks, 24(2), 199-207. # Full textual citation
+ - bib:  # Bibtex key (if any) in your bibliography file
+ - url:  https://www.sciencedirect.com/science/article/abs/pii/S0893608010001899 # URL to the PDF, try to link to a non-paywall version
+ - doi:  10.1016/j.neunet.2010.10.003 # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "Neurodynamical models of working memory (WM) should provide mechanisms
+for storing, maintaining, retrieving, and deleting information. Raznan Pascanu and
+Herbert Jaeger have suggested that memory states correspond, intuitively in terms of
+nonlinear dynamics, to attractors in an input-driven system, giving a simple WM model
+training all performance modes into a Recurrent Neural Network (RNN) of the Echo State
+Network (ESN) type.
+In this replication, we reproduced this WM model in Python in order to see wether or
+not these observations could be observed on a slightly different model made from scratch."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Computational Neuroscience
+
+# Coding language (main one only if several)
+language: Python
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: https://github.com/ReScience/submissions/issues/8
+
+contributors:
+  - name: Benoît Girard
+    orcid: 0000-0002-8117-7064
+    role: editor
+  - name: Vahid Rostami
+    orcid: 0000-0002-3851-0220
+    role: reviewer
+  - name: Christian Jarvers
+    orcid: 0000-0003-0062-9776
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received: October 24, 2019
+  - accepted: March 8, 2021
+  - published: April 1, 2021
+
+# This information will be provided by the editor
+article:
+  - number: 1 
+  - doi: 10.5281/zenodo.4655870
+  - url: https://zenodo.org/record/4655870/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 7
+  - issue:  1
