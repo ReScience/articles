@@ -1,0 +1,117 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it should be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Modeling Insect Phenology Using Ordinal Regression and Continuation Ratio Models"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+authors:
+  - name: Philipp H. Boersch-Supan
+    orcid: 0000-0001-6723-6833
+    email: pboesu@gmail.com
+    affiliations: 1,2,*
+
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    British Trust for Ornithology
+    address: Thetford, United Kingdom
+    
+  - code:    2
+    name:    University of Florida
+    address: Gainesville, FL, USA
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: Insects, categorical regression, R, sequential model 
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/pboesu/replication_candy_1991
+  - doi: 
+  - swh: swh:1:dir:fa45767e4bb56f7807fe2081cfe069881f8b049e
+
+# Data URL and DOI (optional if no data)
+data:
+  - url: https://github.com/pboesu/replication_candy_1991
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: "Steven G. Candy, Modeling Insect Phenology Using Ordinal Regression and Continuation Ratio Models, Environmental Entomology, Volume 20, Issue 1, 1 February 1991, Pages 190–195"
+ - bib:  candy1991modeling
+ - url:  https://doi.org/10.1093/ee/20.1.190
+ - doi:  10.1093/ee/20.1.190
+replication:
+ - cite: "Brian Dennis, William P. Kemp, Roy C. Beckwith, Stochastic Model of Insect Phenology: Estimation and Testing, Environmental Entomology, Volume 15, Issue 3, 1 June 1986, Pages 540–546"
+ - bib:  dennis1986stochastic
+ - url:  https://doi.org/10.1093/ee/15.3.540
+ - doi:  10.1093/ee/15.3.540
+
+# Don't forget to surround abstract with double quotes
+abstract: "This article reimplements a number of ordinal regression models in R and succesfully replicates their application to insect phenology data."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Ecology
+
+# Coding language (main one only if several)
+language: R
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: 
+
+contributors:
+  - name: Timothée Poisot
+    orcid: 0000-0002-0735-5184
+    role: editor
+  - name: Juniper L. Simonis
+    orcid: 0000-0001-9798-0460
+    role: reviewer
+  - name: A. Andrew. M. MacDonald
+    orcid: 0000-0003-1162-169X
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  September 22, 2020
+  - accepted:  June 3, 2021
+  - published: June 16, 2021
+
+# This information will be provided by the editor
+article:
+  - number: 5
+  - doi: 10.5281/zenodo.5006005    
+  - url: https://zenodo.org/record/5006005/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 7
+  - issue:  1
