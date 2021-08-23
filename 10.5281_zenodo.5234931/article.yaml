@@ -1,0 +1,112 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it should be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Three-dimensional wake topology and propulsive performance of low-aspect-ratio pitching-rolling plates"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+authors:
+  - name: Olivier Mesnard
+    orcid: 0000-0001-5335-7853
+    email: mesnardo@gwu.edu
+    affiliations: 1
+    
+  - name: Lorena A. Barba
+    orcid: 0000-0001-5812-2711
+    email: labarba@gwu.edu
+    affiliations: 1,*  # * is for contact author
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Department of Mechanical and Aerospace Engineering, The George Washington University
+    address: Washington, DC, USA
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience c, Computational Fluid Dynamics, C++, Python, Singularity containers
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/barbagroup/petibm-rollingpitching
+  - doi: 
+  - swh: swh:1:dir:087f13c9f78908967077071108092f245d1f707b
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Li, C., & Dong, H. (2016). Three-dimensional wake topology and propulsive performance of low-aspect-ratio pitching-rolling plates. Physics of Fluids, 28(7), 071901.  # Full textual citation
+ - bib: li_dong_2016  # Bibtex key (if any) in your bibliography file
+ - url: https://doi.org/10.1063/1.4954505  # URL to the PDF, try to link to a non-paywall version
+ - doi: 10.1063/1.4954505  # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "This article reports on a full replication study in computational fluid dynamics, using an immersed boundary method to obtain the flow around a pitching and rolling elliptical wing. As in the original study, the computational experiments investigate the wake topology and aerodynamic forces, looking at the effect of: Reynolds number (100--400), Strouhal number (0.4--1.2), aspect ratio, and rolling/pitching phase difference. We also include a grid-independence study (from 5 to 72 million grid cells). The trends in aerodynamic performance and the characteristics of the wake topology were replicated, despite some differences in results. We declare the replication successful, and make fully available all the digital artifacts and workflow definitions, including software build recipes and container images, as well as secondary data and post-processing code. Run times for each computational experiment on the nominal grid were between 8.1 and 13.8 hours to complete 5 flapping cycles, using two compute nodes with Dual 20-Core 3.70GHz Intel Xeon Gold 6148 CPUs and two NVIDIA V100 GPU devices each."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Computational Fluid Dynamics
+
+# Coding language (main one only if several)
+language: C++
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occurred
+review: 
+  - url: https://github.com/ReScience/submissions/issues/55
+
+contributors:
+  - name: Konrad Hinsen
+    orcid: 0000-0003-0330-9428
+    role: editor
+  - name: Chengyu Li
+    orcid: 0000-0002-8379-2423
+    role: reviewer
+  - name: Olivier Pantalé
+    orcid: 0000-0001-7367-5453
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  May 2, 2021
+  - accepted: August 20, 2021
+  - published: August 23, 2021
+
+# This information will be provided by the editor
+article:
+  - number: 7 # Article number will be automatically assigned during publication
+  - doi:    10.5281/zenodo.5234931  # DOI from Zenodo
+  - url:    https://zenodo.org/record/5234931/files/article.pdf # Final PDF URL (Zenodo or rescience website?)
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 7
+  - issue:  1
