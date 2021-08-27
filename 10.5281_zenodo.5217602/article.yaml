@@ -1,0 +1,118 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it should be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] On the Relationship between Self-Attention and Convolutional Layers"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+authors:
+  - name: Mukund Varma
+    orcid: 0000-0001-6480-3126
+    email: mukundvarmat@gmail.com
+    affiliations: 1
+
+  - name: Nishant Prabhu
+    orcid: 0000-0001-8776-1993
+    email: me17b084@smail.iitm.ac.in
+    affiliations: 1,*      # * is for contact author
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Indian Institute of Technology Madras
+    address: Chennai, India
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience c, rescience x, python, pytorch, self-attention
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/NishantPrabhu/Self-Attention-and-Convolutions
+  - doi:
+  - swh: swh:1:dir:6ab40b1686ee05bc3f9413ced6b1a84c6b203814
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: "Jean-Baptiste Cordonnier and Andreas Loukas and Martin Jaggi.
+   On the Relationship between Self-Attention and Convolutional Layers.
+   International Conference on Learning Representations." # Full textual citation
+ - bib: # Bibtex key (if any) in your bibliography file
+ - url: https://arxiv.org/pdf/1911.03584.pdf # URL to the PDF, try to link to a non-paywall version
+ - doi:  # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "In this report, we perform a detailed study on the paper 'On the Relationship between Self-Attention and Convolutional Layers', which provides theoretical and experimental evidence that self attention layers can behave like convolutional layers.
+The proposed method does not obtain state-of-the-art performance but rather answers an interesting question - do self-attention layers process images in a similar manner to convolutional layers?
+This has inspired many recent works which propose fully-attentional models for image recognition.
+We focus on experimentally validating the claims of the original paper and our inferences from the results led us to propose a new variant of the attention operation - Hierarchical Attention.
+The proposed method shows significantly improved performance with fewer parameters, hence validating our hypothesis.
+To facilitate further study, all the code used in our experiments are publicly available here - https://github.com/NishantPrabhu/Self-Attention-and-Convolutions."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Editorial
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain:
+
+# Coding language (main one only if several)
+language: Python
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: https://github.com/ReScience/submissions/issues/53
+
+contributors:
+  - name: Olivia Guest
+    orcid: 0000-0002-1891-0972
+    role: editor
+  - name: Nicholas Sexton
+    orcid: 0000-0003-1236-1711
+    role: reviewer
+  - name: Xiaoliang (Ken) Luo
+    orcid: 0000-0002-5297-2114
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  03 April, 2021
+  - accepted: 30 Jul, 2021
+  - published: 27 Aug, 2021
+
+# This information will be provided by the editor
+article:
+  - number: 6 # Article number will be automatically assigned during publication
+  - doi: 10.5281/zenodo.5217602   # DOI from Zenodo
+  - url: https://zenodo.org/record/5217602/files/article.pdf   # Final PDF URL (Zenodo or rescience website?)
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 7
+  - issue:  1
