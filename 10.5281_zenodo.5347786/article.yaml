@@ -1,0 +1,116 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it should be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Spatial constraints
+  underlying the retinal mosaics of two types of horizontal cells in
+  cat and macaque"
+
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+authors:
+  - name: Stephen J. Eglen
+    orcid: 0000-0001-8607-8025
+    email: sje30@cam.ac.uk
+    affiliations: 1,*
+    
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Department of Applied Mathematics and Theoretical Physics
+    address: Cambridge, UK
+    
+# List of keywords (adding the programming language might be a good idea)
+keywords: retinal mosaics, spatial statistics, R
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/sje30/rescience-hor
+  - doi: 
+  - swh: swh:1:dir:6088b7312865b39a4a5f5af78556bf6da5fa6409
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: # Full textual citation
+ - bib:  Eglen2008-ca
+ - url:  https://arxiv.org/abs/1208.0986
+ - doi:  10.1017/S0952523808080176
+
+# Don't forget to surround abstract with double quotes
+abstract: "This paper describes the successful reproduction of a paper
+I co-authored in 2008 (Eglen and Wong, 2008), as part of the ten year
+reproducibility challenge.  This work was done in the R programming
+language, and thanks to the stability of R, the code could be re-run
+without any problems.  In this paper I discuss the scientific
+background and the steps needed to recreate the key results from our
+2008 paper."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Computational Neuroscience
+
+# Coding language (main one only if several)
+language: R
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/34
+
+contributors:
+  - name: Nicolas P. Rougier
+    orcid: 0000-0002-6972-589X
+    role: editor
+  - name: Stephan Grein
+    orcid: 0000-0001-9524-6633
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  April 30, 2020
+  - accepted:  May 31, 2021
+  - published: August 31, 2021
+
+# This information will be provided by the editor
+article:
+  - number: 22 
+  - doi: 10.5281/zenodo.5347786
+  - url: https://zenodo.org/record/5347786/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  1
