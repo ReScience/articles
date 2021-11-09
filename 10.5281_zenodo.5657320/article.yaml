@@ -1,0 +1,158 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Context-Dependent Encoding of Fear and Extinction Memories in a Large-Scale Network Model of the Basal Amygdala"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author
+authors:
+  - name: Tawan T. A. Carvalho
+    orcid: 0000-0001-9583-4830
+    email: tawantayron@yahoo.com.br
+    affiliations: 1,* # * is for contact author
+    
+  - name: Luana B. Domingos
+    orcid: 0000-0002-7022-6502
+    email: domingos.luana@gmail.com
+    affiliations: 2
+
+  - name: Renan O. Shimoura
+    orcid: 0000-0002-6580-5999
+    email: renanshimoura@gmail.com
+    affiliations: 3
+
+  - name: Nilton L. Kamiji
+    orcid: 0000-0001-5006-6612
+    email: nilton.kamiji@gmail.com
+    affiliations: 3
+    
+  - name: Vinicius L. Cordeiro
+    orcid: 0000-0001-7115-9041
+    email: vinicius.lima.cordeiro@gmail.com
+    affiliations: 4
+    
+  - name: Mauro Copelli
+    orcid: 0000-0001-7441-2858
+    email: mauro.copelli@ufpe.br
+    affiliations: 1
+    
+  - name: Antonio C. Roque
+    orcid: 0000-0003-1260-4840
+    email: antonior@usp.br
+    affiliations: 3    
+    
+    
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Department of Physics, Federal University of Pernambuco
+    address: Recife, Brazil
+
+  - code:    2
+    name:    Department of Pharmacology, Ribeirão Preto Medical School (FMRP), University of São Paulo
+    address: Ribeirão Preto, Brazil
+    
+  - code:    3
+    name:    Department of Physics, School of Philosophy, Sciences and Letters of Ribeirão Preto (FFCLRP), University of São Paulo
+    address: Ribeirão Preto, Brazil
+
+  - code:    4
+    name:    Systems Neuroscience Institut (INS, UMR 1106), Aix-Marseille University
+    address: Marseille, France
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: Basal amygdala, Fear and extinction memories, Context-dependent, Conditioned stimulus, Spiking network model
+
+# Code URL and DOI (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo,
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/tawantayron/RE-Fear-and-extinction-in-a-BA-net-model
+  - doi:
+
+# Date URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Vlachos, I., Herry, C., Lüthi, A., Aertsen, A., & Kumar, A. "Context-dependent encoding of fear and extinction memories in a large-scale network model of the basal amygdala". PLoS Comput Biol, v. 7, n. 3, p. e1001104, 2011. # Full textual citation
+ - bib:  Vlachos2011 # Bibtex key (if any) in your bibliography file
+ - url:  https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1001104 # URL to the PDF, try to link to a non-paywall version
+ - doi:  10.1371/journal.pcbi.1001104 # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "The basal nucleus of the amygdala (BA) is related to the process
+of creating memories of conditioned fear and extinction that are both dependent
+on the context. Vlacho and collaborators developed two models of neural networks
+to study the effect of plasticity based on a specific phenomenological rule in BA
+excitatory neurons. When an excitatory subpopulation receives conditioned stimulus
+(CS) and contextual inputs in narrow time windows, synaptic weights are potentiated
+by this effect, increasing the subpopulation's firing rate related to the specified
+context. In this replication, we implemented the models using Python (for the mean-field
+model) and Brian 2 (for the spiking neuron model), and we were able to reproduce the
+original results qualitatively. In order to replicate the model, it was necessary to
+estimate a considerable amount of parameters and to adapt some of the protocols that
+were either ambiguous or absent in the methodological descriptions of the original work."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Computational Neuroscience
+
+# Coding language (main one only if several)
+language: Python and Brian 2
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: https://github.com/ReScience/submissions/issues/49
+
+contributors:
+  - name: Etienne B. Roesch
+    orcid: https://orcid.org/0000-0002-8913-4173
+    role: editor
+  - name: Etienne B. Roesch
+    orcid: https://orcid.org/0000-0002-8913-4173
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received: 5/3/2021
+  - accepted: 16/10/2021
+  - published: 9/11/2021
+
+# This information will be provided by the editor
+article:
+  - number: 9  # Article number will be automatically assigned during publication
+  - doi:    10.5281/zenodo.5657320  #10.5281/zenodo.5573985  # DOI from Zenodo
+  - url:    https://zenodo.org/record/5657320/files/article.pdf  #https://zenodo.org/record/5573985/files/article.pdf  # Final PDF URL (Zenodo or rescience website?)
+
+# This information will be provided by the editor
+journal:
+  - name: "ReScience C"
+  - issn: 2430-3658
+  - volume: 7
+  - issue: 1
