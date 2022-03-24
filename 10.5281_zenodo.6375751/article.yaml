@@ -5,122 +5,125 @@
 #  - For a successful replication, it shoudl be prefixed with "[Re]"
 #  - For a failed replication, it should be prefixed with "[¬Re]"
 #  - For other article types, no instruction (but please, not too long)
-title: "[Re] A Reservoir Computing Model of Reward-Modulated Motor Learning and Automaticity"
+title: "[Re] Process Aware Stealthy Attack Detection in Industrial Control Systems"
 
 # List of authors with name, orcid number, email and affiliation
 # Affiliation "*" means contact author
 authors:
-  - name: Remya Sankar
-    orcid: 0000-0002-2428-4592
-    email: Remya.Sankar@inria.fr
-    affiliations: 1,2,3,*   # * is for contact author
+  - name: Rahul Raj
+    orcid: 0000-0002-9049-1055
+    email: rahulr@cse.iitk.ac.in
+    affiliations: 1,*
+    
+  # - name: Charan
+    # orcid: 0000-0002-6972-589X
+    # email: Nicolas.Rougier@inria.fr
+    # affiliations:       # * is for contact author
 
-  - name: Nicolas Thou
-    orcid: 0000-0001-9095-9677
-    email: Nicolas.Thou@inria.fr
-    affiliations: 1
-
-  - name: Nicolas P. Rougier
-    orcid: 0000-0002-6972-589X
-    email: Nicolas.Rougier@inria.fr
-    affiliations: 1,2,3
-
-  - name: Arthur Leblois
-    orcid: 0000-0002-9392-5939
-    email: Arthur.Leblois@u-bordeaux.fr
-    affiliations: 3
 
 # List of affiliations with code (corresponding to author affiliations), name
 # and address. You can also use these affiliations to add text such as "Equal
 # contributions" as name (with no address).
 affiliations:
   - code:    1
-    name:    INRIA Bordeaux Sud-Ouest
-    address: Bordeaux, France
-
-  - code:    2
-    name:    LaBRI, Université de Bordeaux, Institut Polytechnique de Bordeaux,
-             Centre National de la Recherche Scientifique, UMR 5800
-    address: Talence, France
-
-  - code:    3
-    name:    Institut des Maladies Neurodégénératives, Université  de Bordeaux,
-             Centre National de la Recherche Scientifique, UMR 5293
-    address: Bordeaux, France
+    name:    Indian Institute of Technology, Kanpur
+    address: Uttar Pradesh (UP), India
+    
+  # - code:    2
+  #   name:    Synchrotron SOLEIL, Division Expériences
+  #   address: Gif sur Yvette, France
+    
+  # - code:    3
+  #   name:    INRIA Bordeaux Sud-Ouest
+  #   address: Bordeaux, France
+    
+  # - code:    4
+  #   name:    LaBRI, Université de Bordeaux, Institut Polytechnique de Bordeaux,
+  #            Centre National de la Recherche Scientifique, UMR 5800
+  #   address: Talence, France
+    
+  # - code:    5
+  #   name:    Institut des Maladies Neurodégénératives, Université  de Bordeaux,
+  #            Centre National de la Recherche Scientifique, UMR 5293
+  # #   address: Bordeaux, France
 
 
 # List of keywords (adding the programming language might be a good idea)
-keywords: rescience c, Python
+keywords: python, matplotlib, time series analysis, Intrusion Detection, cybersecurity
 
-# Code URL and DOI (url is mandatory for replication, doi after acceptance)
-# You can get a DOI for your code from Zenodo,
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
 #   see https://guides.github.com/activities/citable-code/
 code:
-  - url: https://github.com/rsankar9/Reimplementation-SUPERTREX/releases/tag/v3.0
-  - doi: https://doi.org/10.5281/zenodo.4596425
+  - url: https://github.com/rahulrajpl/PyPASAD
+  - doi: 
+  - swh: 
 
-# Date URL and DOI (optional if no data)
+# Data URL and DOI (optional if no data)
 data:
-  - url:
+  - url: 
   - doi:
 
 # Information about the original article that has been replicated
 replication:
- - cite: Pyle, R., & Rosenbaum, R. (2019). A reservoir computing model of reward-modulated motor learning and automaticity. Neural computation, 31(7), 1430-1461. # Full textual citation
- - bib:  pyle2019 # Bibtex key (if any) in your bibliography file
- - url:  https://www.mitpressjournals.org/doi/pdf/10.1162/neco_a_01198 # URL to the PDF, try to link to a non-paywall version
- - doi:  10.1162/neco_a_01198 # Regular digital object identifier
+ - cite: "Wissam Aoudi, Mikel Iturbe, and Magnus Almgren. 2018. Truth Will Out:
+Departure-Based Process-Level Detection of Stealthy Attacks on Control
+Systems. In 2018 ACM SIGSAC Conference on Computer and Communications
+Security (CCS ’18), October 15–19, 2018, Toronto, ON, Canada. ACM, New
+York, NY, USA, 15 pages. https://doi.org/10.1145/3243734.3243781"# Full textual citation
+ - bib:  # Bibtex key (if any) in your bibliography file
+ - url: https://zenodo.org/record/5932598/files/article.pdf # URL to the PDF, try to link to a non-paywall version
+ - doi: 10.5281/zenodo.5932598 # Regular digital object identifier
 
 # Don't forget to surround abstract with double quotes
-abstract: ""
+abstract: "Although the traditional IT security layer provided to Industrial Control Systems offers a great deal of protection, security managers often overlook the possibility of a potential stealthy attacks at the process level. In the paper, \"Truth Will Out: Departure-Based Process-Level Detection of Stealthy Attacks on Control Systems\" the authors bring out a novel approach to detecting stealthy attacks on the control system through a process-aware methodology which they call - PASAD. It enables early detection in the subtle variation of process behavior, thus averting strategic adversaries from maliciously manipulating the industrial process within the noise level. The original implementation for the PASAD algorithm was in Matlab. In this replication, I use Python, and popular visualization library, Matplotlib, to obtain the results claimed."
 
 # Bibliography file (yours)
 bibliography: bibliography.bib
-
+  
 # Type of the article
 # Type can be:
 #  * Editorial
 #  * Letter
 #  * Replication
-type: Replication
+type: Reproduction
 
 # Scientific domain of the article (e.g. Computational Neuroscience)
 #  (one domain only & try to be not overly specific)
-domain: Computational Neuroscience
+domain: Cybersecurity for Critical Infrastructure
 
 # Coding language (main one only if several)
 language: Python
 
-
+  
 # To be filled by the author(s) after acceptance
 # -----------------------------------------------------------------------------
 
 # For example, the URL of the GitHub issue where review actually occured
-review:
-  - url: https://github.com/ReScience/submissions/issues/50
+review: 
+  - url: https://github.com/ReScience/submissions/issues/17
 
 contributors:
-  - name: Benoît Girard
-    orcid: 0000-0002-8117-7064
+  - name: Etienne B. Roesch
+    orcid: https://orcid.org/0000-0002-8913-4173
     role: editor
-  - name: Daniel Schmid
-    orcid: 0000-0002-2439-9453
+  - name: Jaime Arias
     role: reviewer
-  - name: Robin Gutzen
-    orcid: 0000-0001-7373-5962
+  - name: Gabriel Netz
     role: reviewer
 
 # This information will be provided by the editor
 dates:
-  - received:  March 12, 2020
-  - accepted:  November 22, 2021
-  - published: November 22, 2021
+  - received: February 16, 2018
+  - accepted: January 18, 2022
+  - published: January 
 
 # This information will be provided by the editor
 article:
-  - number: 11 # Article number will be automatically assigned during publication
-  - doi: 10.5281/zenodo.5718075   # DOI from Zenodo
-  - url: https://zenodo.org/record/5718075/files/article.pdf   # Final PDF URL (Zenodo or rescience website?)
+  - number: 4 # Article number will be automatically assigned during publication
+  - doi: 10.5281/zenodo.6375751   # DOI from Zenodo
+  - url: https://zenodo.org/record/6375751/files/article.pdf   # Final PDF URL (Zenodo or rescience website?)
 
 # This information will be provided by the editor
 journal:
