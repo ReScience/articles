@@ -117,13 +117,13 @@ dates:
 
 # This information will be provided by the editor
 article:
-  - number: 13
-  - doi:    10.5281/zenodo.6478462
+  - number: 2
+  - doi:    10.5281/zenodo.6484021
   - url:    https://zenodo.org/record/6478462/files/article.pdf
 
 # This information will be provided by the editor
 journal:
   - name:   "ReScience C"
   - issn:   2430-3658
-  - volume: 7
+  - volume: 8
   - issue:  1
