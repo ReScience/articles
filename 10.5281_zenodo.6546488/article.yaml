@@ -1,0 +1,120 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it should be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Reproductive pair correlations and the clustering of organisms"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+authors:
+  - name: Coralie Picoche
+    orcid: 0000-0002-0867-2130
+    email: coralie.picoche@u-bordeaux.fr
+    affiliations: 1,*
+
+  - name: William R. Young
+    orcid: 0000-0002-1842-3197
+    email: wryoung@ucsd.edu
+    affiliations: 2
+
+  - name: Frederic Barraquand
+    orcid: 0000-0002-4759-0269
+    email: frederic.barraquand@u-bordeaux.fr
+    affiliations: 1      # * is for contact author
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Institute of Mathematics of Bordeaux, CNRS \& University of Bordeaux
+    address: Talence, France
+
+  - code: 2
+    name: Scripps Institution of Oceanography, University of California at San Diego
+    address: La Jolla, California, USA
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: phytoplankton, individual-based model, clustering, advection-diffusion-reaction, C++
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/CoraliePicoche/brownian_bug_fluid/tree/main/code
+  - doi: 10.5281/zenodo.6546471 
+  - swh: 
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Young, W. R., Roberts, A. J., & Stuhne, G. (2001). Reproductive pair correlations and the clustering of organisms. Nature, 412(6844), 328-331
+ - bib:  young_reproductive_2001
+ - url:  https://www.researchgate.net/profile/William-Young-22/publication/11882165_Reproductive_pair_correlations_and_the_clustering_of_organisms/links/0c96052a9ecabaeec5000000/Reproductive-pair-correlations-and-the-clustering-of-organisms.pdf # URL to the PDF, try to link to a non-paywall version
+ - doi:  10.1038/35085561
+
+# Don't forget to surround abstract with double quotes
+abstract: "In the present work, we replicate the results of Young et al. (2001) ``Reproductive pair correlations and the clustering of organisms'', an analysis of the formation of aggregates in an otherwise homogeneous environment mimicking marine small-scale hydrodynamics. Using an individual-based model of independent, random-walking particles (also called ``Brownian bugs''), they show that reproduction by fission in a turbulent and viscous flow leads to the formation of elongated clusters. Spatial patterns therefore depart from the usual, homogeneous solution of the advection-diffusion-reaction equation for a large population. Due to their size, phytoplankton organisms experience a mostly viscous environment in a laminar shear field, with random but homogeneous changes in directions due to turbulence. Reproduction and limited movement of daughter cells, which occur at the phytoplankton scale, interact with these hydrodynamics processes and can lead to aggregates.  In this context, a better understanding of the interactions between demography and small-scale hydrodynamics could provide further explanation for observed spatial distribution of phytoplankton species, and perhaps even their coexistence. This motivated us to revisit Young et al. (2001). In addition to replicating the numerical and mathematical results of Young et al. 2001, we also wished to present the mathematical derivations that were missing from the original paper, which should make this replication article more accessible to most readers, especially those without a fluid mechanics background."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Ecology #Theoretical Ecology?
+
+# Coding language (main one only if several)
+language: C++
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/58 
+
+contributors:
+  - name: Pierre de Buyl
+    orcid: 0000-0002-6640-6463
+    role: editor
+  - name: Francesco Turci
+    orcid: 0000-0002-0687-0715
+    role: reviewer
+  - name: Rajesh Singh
+    orcid: 0000-0003-0266-9691
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received: August 24, 2021
+  - accepted: May 3, 2022
+  - published: May 13, 2022
+
+# This information will be provided by the editor
+article:
+  - number: 3 # Article number will be automatically assigned during publication
+  - doi: 10.5281/zenodo.6546488    # DOI from Zenodo
+  - url: https://zenodo.org/record/6546488/files/article.pdf   # Final PDF URL (Zenodo or rescience website?)
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 8
+  - issue:  1
