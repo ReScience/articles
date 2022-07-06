@@ -5,74 +5,59 @@
 #  - For a successful replication, it shoudl be prefixed with "[Re]"
 #  - For a failed replication, it should be prefixed with "[¬Re]"
 #  - For other article types, no instruction (but please, not too long)
-title: "[Re] A Reservoir Computing Model of Reward-Modulated Motor Learning and Automaticity"
+title: "[Re] A Multi-Functional Synthetic Gene Network"
 
 # List of authors with name, orcid number, email and affiliation
 # Affiliation "*" means contact author
 authors:
-  - name: Remya Sankar
-    orcid: 0000-0002-2428-4592
-    email: Remya.Sankar@inria.fr
-    affiliations: 1,2,3,*   # * is for contact author
-
-  - name: Nicolas Thou
-    orcid: 0000-0001-9095-9677
-    email: Nicolas.Thou@inria.fr
+  - name: Gabriel Baiocchi de Sant'Anna
+    orcid: 0000-0001-8364-8969
+    email: baiocchi.gabriel@gmail.com
+    affiliations: 1,*
+  - name: Mateus Favarin Costa
+    orcid:
+    email: mateusfavarinc@gmail.com
     affiliations: 1
-
-  - name: Nicolas P. Rougier
-    orcid: 0000-0002-6972-589X
-    email: Nicolas.Rougier@inria.fr
-    affiliations: 1,2,3
-
-  - name: Arthur Leblois
-    orcid: 0000-0002-9392-5939
-    email: Arthur.Leblois@u-bordeaux.fr
-    affiliations: 3
 
 # List of affiliations with code (corresponding to author affiliations), name
 # and address. You can also use these affiliations to add text such as "Equal
 # contributions" as name (with no address).
 affiliations:
   - code:    1
-    name:    INRIA Bordeaux Sud-Ouest
-    address: Bordeaux, France
-
-  - code:    2
-    name:    LaBRI, Université de Bordeaux, Institut Polytechnique de Bordeaux,
-             Centre National de la Recherche Scientifique, UMR 5800
-    address: Talence, France
-
-  - code:    3
-    name:    Institut des Maladies Neurodégénératives, Université  de Bordeaux,
-             Centre National de la Recherche Scientifique, UMR 5293
-    address: Bordeaux, France
-
+    name:    Federal University of Santa Catarina (UFSC)
+    address: Florianópolis, Brazil
 
 # List of keywords (adding the programming language might be a good idea)
-keywords: rescience c, Python
+keywords: rescience c, octave, biological computing, synthetic biology, programmable genetic circuit, frequency multiplier, oscillator, toggle switch
+
 
 # Code URL and DOI (url is mandatory for replication, doi after acceptance)
 # You can get a DOI for your code from Zenodo,
 #   see https://guides.github.com/activities/citable-code/
 code:
-  - url: https://github.com/rsankar9/Reimplementation-SUPERTREX/releases/tag/v3.0
-  - doi: https://doi.org/10.5281/zenodo.4596425
+  - url: https://github.com/baioc/re-multif
+  - doi: 10.5281/zenodo.3545451
+  - swh: swh:1:dir:bc0c0e990a078df838de14b8745e12e6c471eb38
 
-# Date URL and DOI (optional if no data)
+# Data URL and DOI (optional if no data)
 data:
   - url:
   - doi:
 
 # Information about the original article that has been replicated
 replication:
- - cite: Pyle, R., & Rosenbaum, R. (2019). A reservoir computing model of reward-modulated motor learning and automaticity. Neural computation, 31(7), 1430-1461. # Full textual citation
- - bib:  pyle2019 # Bibtex key (if any) in your bibliography file
- - url:  https://www.mitpressjournals.org/doi/pdf/10.1162/neco_a_01198 # URL to the PDF, try to link to a non-paywall version
- - doi:  10.1162/neco_a_01198 # Regular digital object identifier
+ - cite: "Purcell O, di Bernardo M, Grierson CS, Savery NJ
+          (2011) A Multi-Functional Synthetic Gene Network: A Frequency Multiplier, Oscillator and Switch.
+          PLOS ONE 6(2): e16140." # Full textual citation
+ - bib:  multif # Bibtex key (if any) in your bibliography file
+ - url:  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3040778/pdf/pone.0016140.pdf # URL to the PDF, try to link to a non-paywall version
+ - doi:  https://doi.org/10.1371/journal.pone.0016140 # Regular digital object identifier
 
 # Don't forget to surround abstract with double quotes
-abstract: ""
+abstract: "Studies in the field of synthetic biology are constantly making additions to biological circuit repositories, as well as to the theoretical understanding of their capabilities.
+          The ability to compute with biomolecules has been demonstrated by many synthetic gene networks, but until recently the majority of such models were engineered to implement the functionality of a single circuit part.
+          Purcell et al. have proposed a network capable of multiple functions, switching between three different behaviours in a programmable fashion.
+          This work provides an open-source implementation in which their in silico experiments were replicated."
 
 # Bibliography file (yours)
 bibliography: bibliography.bib
@@ -86,10 +71,10 @@ type: Replication
 
 # Scientific domain of the article (e.g. Computational Neuroscience)
 #  (one domain only & try to be not overly specific)
-domain: Computational Neuroscience
+domain: Biological Computing
 
 # Coding language (main one only if several)
-language: Python
+language: Octave
 
 
 # To be filled by the author(s) after acceptance
@@ -97,34 +82,34 @@ language: Python
 
 # For example, the URL of the GitHub issue where review actually occured
 review:
-  - url: https://github.com/ReScience/submissions/issues/50
+  - url: https://github.com/ReScience/submissions/issues/13
 
 contributors:
-  - name: Benoît Girard
-    orcid: 0000-0002-8117-7064
+  - name: Konrad Hinsen
+    orcid: 0000-0003-0330-9428
     role: editor
-  - name: Daniel Schmid
-    orcid: 0000-0002-2439-9453
+  - name: Aaron Shifman
+    orcid: 0000-0003-2140-7590
     role: reviewer
-  - name: Robin Gutzen
-    orcid: 0000-0001-7373-5962
+  - name: Konrad Hinsen
+    orcid: 0000-0003-0330-9428
     role: reviewer
 
 # This information will be provided by the editor
 dates:
-  - received:  March 12, 2020
-  - accepted:  November 22, 2021
-  - published: November 22, 2021
+  - received:  January 15, 2020
+  - accepted:  July 5, 2022
+  - published: July 6, 2022
 
 # This information will be provided by the editor
 article:
-  - number: 11 # Article number will be automatically assigned during publication
-  - doi: 10.5281/zenodo.5718075   # DOI from Zenodo
-  - url: https://zenodo.org/record/5718075/files/article.pdf   # Final PDF URL (Zenodo or rescience website?)
+  - number: 5
+  - doi:    10.5281/zenodo.6801765
+  - url:    https://zenodo.org/record/6801765/files/article.pdf
 
 # This information will be provided by the editor
 journal:
   - name:   "ReScience C"
   - issn:   2430-3658
-  - volume: 7
+  - volume: 8
   - issue:  1
