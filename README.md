@@ -167,10 +167,17 @@ On rare occasions, authors propose corrections to their already published articl
 Since updates are rare, the procedure is less automated than for publishing new articles.
 
 1\. Log in on [Zenodo](https://zenodo.org) using your personal account.
+
 2\. Click on "upload" (in the blue bar on top) to see your prior uploads. Find the original upload of the article and click on it. Note: the article will be listed there only if you have associated your ORCID with your Zenodo account.
+
 3\. Click on the green "New version" button, right under the "Edit" button near the top of the page.
+
 4\. Find the section "Basic information", which starts with the DOI. Note that the displayed DOI is *not* the one assigned initially, but a new DOI for the new version. Click on the "Reserve DOI" button below the DOI. Send the DOI to the authors, and ask them to provide a PDF of their updated article containing this DOI.
+
 5\. Delete the original PDF file on Zenodo, and upload the new one. Note: if you don't delete the original file, the new version will contain both files.
+
 6\. Click the "Publish" button.
+
 7\. Clone this repository on your computer, and update the files article.pdf, article.yaml, and article.bib in the directory for the article you are working on. In article.bib, add a note field explaining the correction, with a reference to the original DOI. For an example, click [here](https://github.com/ReScience/articles/tree/master/10.5281_zenodo.3763416).
+
 8\. Update https://github.com/ReScience/rescience.github.io/blob/sources/_bibliography/published.bib, replacing the original entry with a copy of the updated article.bib.
