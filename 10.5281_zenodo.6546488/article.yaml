@@ -109,8 +109,8 @@ dates:
 # This information will be provided by the editor
 article:
   - number: 3 # Article number will be automatically assigned during publication
-  - doi: 10.5281/zenodo.6546488    # DOI from Zenodo
-  - url: https://zenodo.org/record/6546488/files/article.pdf   # Final PDF URL (Zenodo or rescience website?)
+  - doi: 10.5281/zenodo.7244522    # DOI from Zenodo
+  - url: https://zenodo.org/record/7244522/files/article.pdf    # Final PDF URL (Zenodo or rescience website?)
 
 # This information will be provided by the editor
 journal:
