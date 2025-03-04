@@ -1,0 +1,124 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it should be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] When Does Label Smoothing Help?"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+# To include author suffix format name as Last Suffix, First M.I. (e.g. Schackart III, Kenneth E.)
+authors:
+  - name: Sven Dominik Wagner
+    orcid: 0009-0004-1207-7205
+    email: sven-dominik.wagner@tu-dortmund.de
+    affiliations: 1,$\dagger$,*
+  - name: Yann Philipp Kurowski
+    orcid: 0009-0003-5113-4623
+    email: yann-philipp.kurowski@tu-dortmund.de
+    affiliations: 1,$\dagger$
+  - name: Leonhard Moritz Holländer
+    orcid: 0009-0006-2454-483X
+    email: leonhard.hollaender@tu-dortmund.de
+    affiliations: 1,$\dagger$
+  - name: Tobias Uelwer
+    orcid: 0000-0001-9215-7336
+    email: tobias.uelwer@tu-dortmund.de
+    affiliations: 1
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    TU Dortmund University, Department of Computer Science
+    address: Dortmund, Germany
+  - code:    $\dagger$
+    name:    Equal contribution
+    address: ""
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: rescience c, python, jupyter, neural networks
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/sdwagner/re-labelsmoothing/
+  - doi: 
+  - swh: 
+
+# Data URL and DOI (optional if no data)
+data:
+  - url: https://drive.google.com/drive/folders/1PCtHG5sWDRy_rK5fsqFdmA46oZwMVxuB?usp=sharing
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Rafael Müller, Simon Kornblith, and Geoffrey E. Hinton. When does label smoothing help? In Advances in Neural Information Processing Systems, pages 4696-4705, 2019. # Full textual citation
+ - bib:  mueller2019 # Bibtex key (if any) in your bibliography file
+ - url:  https://arxiv.org/pdf/1906.02629.pdf # URL to the PDF, try to link to a non-paywall version
+ - doi:  10.48550/arXiv.1906.02629 # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "Label smoothing is a technique that can make neural network classifiers less overconfident in their predictions and reduce overfitting, resulting in more reliable and accurate results. It's widely used but poorly understood. The replicated paper on label smoothing presents empirical evidence that it improves generalization and model calibration, and investigates its behavior in knowledge distillation.\\\\ 
+In this paper, we seek to validate the authors' findings by re-implementing the original experiments, including the models and datasets, using PyTorch. Moreover, we evaluate the experiments on additional datasets and models, which align with the authors' conclusions. Furthermore, we establish a concrete mathematical foundation to recreate the penultimate layer representation presented in the original paper."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Machine Learning
+
+# Coding language (main one only if several)
+language: python
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/75
+
+contributors:
+  - name: Georgios Is. Detorakis
+    orcid: 0000-0001-5891-1702
+    role: editor
+  - name: Mohammad Arvan
+    orcid: 0000-0001-9155-4559
+    role: reviewer
+  - name: 
+    orcid: 
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received: August 30, 2023
+  - accepted: February 18, 2025 
+  - published: February 27, 2025
+
+# This information will be provided by the editor
+article:
+  - number: 1
+  - doi: 10.5281/zenodo.14953654
+  - url: https://zenodo.org/record/14941471/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name: "ReScience C"
+  - issn: 2430-3658
+  - volume: 10
+  - issue:  1
