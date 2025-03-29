@@ -1,0 +1,113 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it should be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] An anatomically constrained neural network model of fear conditioning"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+authors:
+  - name: Luc Caspar
+    orcid: 0000-0002-8518-9433
+    email: casparluc@gmail.com
+    affiliations: 1,*  # * is for contact author
+    
+  - name: Roger K. Moore
+    orcid: 0000-0003-0065-3311
+    email: r.k.moore@sheffield.ac.uk
+    affiliations: 1
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    The University of Sheffield
+    address: Western Bank, Sheffield, S10 2TN, United Kingdom
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: Computational Neuroscience, Classical Conditioning, Python
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://gitlab.com/davinellulinvega/armony
+  - doi: 
+  - swh: 
+
+# Data URL and DOI (optional if no data)
+data:
+  - url: https://doi.org/10.5281/zenodo.5550570
+  - doi: 10.5281/zenodo.5550570
+
+# Information about the original article that has been replicated
+replication:
+ - cite: "Armony, J. L., Servan-Schreiber, D., Cohen, J. D., & LeDoux, J. E. (1995). An anatomically constrained neural network model of fear conditioning. Behavioral Neuroscience, 109(2), 246–257. https://doi.org/10.1037/0735-7044.109.2.246" # Full textual citation
+ - bib: "Armony1995" # Bibtex key (if any) in your bibliography file
+ - url: "http://www.ncbi.nlm.nih.gov/pubmed/7619315" # URL to the PDF, try to link to a non-paywall version
+ - doi: "10.1037/0735-7044.109.2.246" # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "This article presents a replication of the computational model and classical conditioning experiment initially published in the article entitled: \"An anatomically constrained neural network model of fear conditioning\". In the original paper, the author identified a set of principles underlying the mechanisms for transmitting information from the thalamus to the amygdala as suggested by the theory of the \"Two-pathways to the amygdala\". Through a simulated classical conditioning experiment, the author's goal is to validate the design principles by showing that the computational model is able to account for sets of physiological and behavioral findings from conditioning studies on animals. A second aim of the original article was to emphasize the usefulness of computer modeling as a tool to help neuroscience move forward. Here I show that I was able to re-implement the computational model described by Armony et al. (1995), as well as replicate the results initially published. Individual units within the model exhibited differences in activation after the conditioning phase which is consistent with empirical results from cell recording studies. Similarly, the behavioral output of the network matches experimental results from the classical conditioning paradigm. Therefore, the principles on which the computational model is built are valid. Moreover, the model has since proved its usefulness by being able to predict the outcome of lesion studies on the parallel pathways used by the brain to carry stimuli from the thalamus to the amygdala.
+"
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Computational Neuroscience
+
+# Coding language (main one only if several)
+language: Python  
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/60
+
+contributors:
+  - name: Etienne Roesch
+    orcid: 0000-0002-8913-4173
+    role: editor
+  - name: Benoit Girard
+    orcid: 0000-0002-8117-7064
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received: November 1, 2018
+  - accepted: April 27, 2024
+  - published: April 27, 2024
+
+# This information will be provided by the editor
+article:
+  - number: 5
+  - doi:    "10.5281_zenodo.11077385"
+  - url:    https://zenodo.org/record/11077385/files/article.pdf
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 9
+  - issue:  1
