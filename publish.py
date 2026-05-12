@@ -19,6 +19,8 @@ def upload_content(server, token, article_id, filename):
     data = {'filename': filename}
     files = {'file': open(filename, 'rb')}
     url = 'https://%s/api/deposit/depositions/%s/files' % (server, article_id)
+    # print("URL:", url)
+    # print("TOKEN:", token)
     response = requests.post(url, params={'access_token': token},
                               data=data, files=files)
     if response.status_code != 201:
@@ -32,7 +34,8 @@ def update_metadata(server, token, article_id, article):
     
     headers = {"Content-Type": "application/json"}
     url = 'https://%s/api/deposit/depositions/%s' % (server, article_id)
-
+    # print("URL:", url)
+    # print("TOKEN:", token)
     data = {
         'metadata': {
             'title': article.title,
@@ -103,6 +106,8 @@ def publish(server, token, article_id):
     """ Make entry public (DANGER ZONE) """
     
     url = 'https://%s/api/deposit/depositions/%s/actions/publish' % (server, article_id)
+    # print("URL:", url)
+    # print("TOKEN:", token)
     response = requests.post(url, params={'access_token': token})
     if response.status_code != 202:
         raise IOError("%s: " % response.status_code +

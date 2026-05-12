@@ -12,7 +12,8 @@ import requests
 def reserve_doi(server, token):
     """ Reserve a new DOI on Zenodo """
     
-    headers = { "Content-Type": "application/json" }
+    headers = { "Content-Type": "application/json",
+                "Referer":  "https://rescience.github.io"  }
     url = 'https://%s/api/deposit/depositions' % server
     response = requests.post(url, params={'access_token': token},
                              json={}, headers=headers)

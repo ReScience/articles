@@ -2,81 +2,75 @@
 # -------------------------------------------------------
 
 # Title of the article:
-#  - For a successful replication, it shoudl be prefixed with "[Re]"
+#  - For a successful replication, it should be prefixed with "[Re]"
 #  - For a failed replication, it should be prefixed with "[¬Re]"
 #  - For other article types, no instruction (but please, not too long)
-title: "[Re] A Reservoir Computing Model of Reward-Modulated Motor Learning and Automaticity"
+title: "[$\\sim$Re] Exploration in Model-based Reinforcement Learning by Empirically Estimating Learning Progress"
 
 # List of authors with name, orcid number, email and affiliation
 # Affiliation "*" means contact author
 authors:
-  - name: Remya Sankar
-    orcid: 0000-0002-2428-4592
-    email: Remya.Sankar@inria.fr
-    affiliations: 1,2,3,*   # * is for contact author
-
-  - name: Nicolas Thou
-    orcid: 0000-0001-9095-9677
-    email: Nicolas.Thou@inria.fr
+  - name: Augustin Chartouny
+    orcid: 0009-0003-0583-4290
+    email: augustin.chartouny@sorbonne-universite.fr
+    affiliations: 1,* # * is for contact author
+    
+  - name: Jean-Pierre Nadal
+    orcid: 0000-0003-0022-0647
+    email: jean-pierre.nadal@phys.ens.fr 
+    affiliations: 2,3
+    
+  - name: Mehdi Khamassi
+    orcid: 0000-0002-2515-1046
+    email: mehdi.khamassi@sorbonne-universite.fr
     affiliations: 1
-
-  - name: Nicolas P. Rougier
-    orcid: 0000-0002-6972-589X
-    email: Nicolas.Rougier@inria.fr
-    affiliations: 1,2,3
-
-  - name: Arthur Leblois
-    orcid: 0000-0002-9392-5939
-    email: Arthur.Leblois@u-bordeaux.fr
-    affiliations: 3
 
 # List of affiliations with code (corresponding to author affiliations), name
 # and address. You can also use these affiliations to add text such as "Equal
 # contributions" as name (with no address).
 affiliations:
   - code:    1
-    name:    INRIA Bordeaux Sud-Ouest
-    address: Bordeaux, France
-
+    name:    Institute of Intelligent Systems and Robotics, Centre National de la Recherche Scientifique, UMR 7222, Sorbonne Université
+    address: Paris, France
+    
   - code:    2
-    name:    LaBRI, Université de Bordeaux, Institut Polytechnique de Bordeaux,
-             Centre National de la Recherche Scientifique, UMR 5800
-    address: Talence, France
-
+    name:    Centre d’Analyse et de Mathématique Sociales, CAMS, UMR 8557 CNRS-EHESS, École des Hautes Études en Sciences Sociales
+    address: Paris, France
+    
   - code:    3
-    name:    Institut des Maladies Neurodégénératives, Université  de Bordeaux,
-             Centre National de la Recherche Scientifique, UMR 5293
-    address: Bordeaux, France
-
+    name:    Laboratoire de Physique de l’ENS, LPENS, UMR 8023, CNRS - ENS Paris - PSL University - SU - Université Paris Cité
+    address: Paris, France
+    
 
 # List of keywords (adding the programming language might be a good idea)
-keywords: rescience c, Python
+keywords: Intrinsic motivation, Model-based reinforcement learning, Python
 
 # Code URL and DOI (url is mandatory for replication, doi after acceptance)
 # You can get a DOI for your code from Zenodo,
 #   see https://guides.github.com/activities/citable-code/
 code:
-  - url: https://github.com/rsankar9/Reimplementation-SUPERTREX/releases/tag/v3.0
-  - doi: https://doi.org/10.5281/zenodo.4596425
+  - url: https://github.com/AugustinChrtn/Reproduction/
+  - doi: 10.5281/zenodo.11612146 
 
 # Date URL and DOI (optional if no data)
-data:
+data: 
   - url:
   - doi:
 
 # Information about the original article that has been replicated
 replication:
- - cite: Pyle, R., & Rosenbaum, R. (2019). A reservoir computing model of reward-modulated motor learning and automaticity. Neural computation, 31(7), 1430-1461. # Full textual citation
- - bib:  pyle2019 # Bibtex key (if any) in your bibliography file
- - url:  https://www.mitpressjournals.org/doi/pdf/10.1162/neco_a_01198 # URL to the PDF, try to link to a non-paywall version
- - doi:  10.1162/neco_a_01198 # Regular digital object identifier
+ - cite: lopes2012
+ - bib:  Lopes, M., Lang, T., Toussaint, M., \& Oudeyer, P. Y. (2012). Exploration in model-based reinforcement learning by empirically estimating learning progress. Advances in neural information processing systems, 25.
+ - url:  https://proceedings.neurips.cc/paper/2012/file/a0a080f42e6f13b3a2df133f073095dd-Paper.pdf
+ - doi:  None # Regular digital object identifier
+
 
 # Don't forget to surround abstract with double quotes
-abstract: ""
+abstract: "The goal of a model-based reinforcement learning agent is to maximize external returns by understanding the structure of the environment it explores. However, simple reinforcement learning agents may struggle with tasks where external rewards are scarce. Taking inspiration from developmental sciences which show that infants spontaneously explore their environment in the absence of extrinsic rewards, intrinsically motivated reinforcement learning investigates how agents can explore their environments with little extrinsic motivation. In 2012, Lopes and colleagues proposed two new intrinsically motivated models in model-based reinforcement learning [1]. Building upon two optimistic-in-the-face-of-uncertainty agents, they demonstrate theoretical convergence properties for one of their agents, and provide three experiments to show that their models are more versatile than state-of-the-art models. However, due to missing information in their protocol, we only managed to partially reproduce the results of the original article. In our reproduction article, we show the results obtained for several alternative ways to interpret the text of the original article, and discuss what this implies in terms of performance of the different agents. For each tested variant, we performed parameter optimization in order to give the best chances to replicate the figures of the original article."
 
 # Bibliography file (yours)
 bibliography: bibliography.bib
-
+  
 # Type of the article
 # Type can be:
 #  * Editorial
@@ -86,45 +80,46 @@ type: Replication
 
 # Scientific domain of the article (e.g. Computational Neuroscience)
 #  (one domain only & try to be not overly specific)
-domain: Computational Neuroscience
+domain: Computer Science
 
 # Coding language (main one only if several)
 language: Python
 
-
+  
 # To be filled by the author(s) after acceptance
 # -----------------------------------------------------------------------------
 
 # For example, the URL of the GitHub issue where review actually occured
-review:
-  - url: https://github.com/ReScience/submissions/issues/50
+review: 
+  - url: https://github.com/ReScience/submissions/issues/73
 
 contributors:
-  - name: Benoît Girard
-    orcid: 0000-0002-8117-7064
+  - name: Olivia Guest
+    orcid: 0000-0002-1891-0972
     role: editor
-  - name: Daniel Schmid
-    orcid: 0000-0002-2439-9453
+  - name: Mohammad Arvan
+    orcid: 0000-0001-9155-4559
     role: reviewer
-  - name: Robin Gutzen
-    orcid: 0000-0001-7373-5962
+  - name: Nicolas Rougier
+    orcid: 0000-0002-6972-589X
     role: reviewer
 
 # This information will be provided by the editor
 dates:
-  - received:  March 12, 2020
-  - accepted:  November 22, 2021
-  - published: November 22, 2021
+  - received:  May 23, 2023
+  - accepted:  April 12, 2024
+  - published: September 2, 2024
 
 # This information will be provided by the editor
 article:
-  - number: 11 # Article number will be automatically assigned during publication
-  - doi: 10.5281/zenodo.5718075   # DOI from Zenodo
-  - url: https://zenodo.org/record/5718075/files/article.pdf   # Final PDF URL (Zenodo or rescience website?)
+  - number: 6
+  - doi:    10.5281/zenodo.13627804
+  - url:    https://zenodo.org/record/13627804/files/article.pdf
 
 # This information will be provided by the editor
 journal:
   - name:   "ReScience C"
   - issn:   2430-3658
-  - volume: 7
+  - volume: 9
   - issue:  1
+
