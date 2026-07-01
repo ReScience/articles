@@ -5,57 +5,59 @@
 #  - For a successful replication, it should be prefixed with "[Re]"
 #  - For a failed replication, it should be prefixed with "[¬Re]"
 #  - For other article types, no instruction (but please, not too long)
-title: "Learning with Noisy Labels [~Re]visited"
+title: "[Re] Computational Modelling of Glucose Uptake by SGLT1 and Apical GLUT2 in the Enterocyte"
 
 # List of authors with name, orcid number, email and affiliation
 # Affiliation "*" means contact author (required even for single-authored papers)
 # To include author suffix format name as Last Suffix, First M.I. (e.g. Schackart III, Kenneth E.)
 authors:
-  - name: Valter Hudovernik
-    orcid: 0000-0003-3045-521X
-    email: vh0153@student.uni-lj.si
+  - name: Karim Raqbi
+    orcid: 0009-0001-9553-1837
+    email: Karim.Raqbi@univ-lille.fr
+    affiliations: 1,2,*
+    
+  - name: Maxime Folschette
+    orcid: 0000-0002-3727-2320
+    email: Maxime.Folschette@centralelille.fr
+    affiliations: 1     
+    
+  - name: Cristian Versari
+    orcid: 0009-0003-6075-1922
+    email: Cristian.Versari@univ-lille.fr
+    affiliations: 1
+
+  - name: Olivier Briand
+    orcid: 0000-0003-2979-0395
+    email: olivier.briand@univ-lille.fr
+    affiliations: 2
+
+  - name: Cedric Lhoussaine
+    orcid: 0000-0002-3970-3761
+    email: Cedric.Lhoussaine@univ-lille.fr
     affiliations: 1,*
-
-  - name: Žiga Rot
-    orcid: 0009-0001-0524-5221
-    email: zr13891@student.uni-lj.si
-    affiliations: 1
-
-  - name: Klemen Vovk
-    orcid: 0009-0001-0543-484X
-    email: kv4582@student.uni-lj.si
-    affiliations: 1
-
-  - name: Luka Škodnik
-    orcid: 0009-0008-0188-8757
-    email: ls1906@student.uni-lj.si
-    affiliations: 1
-
-  - name: Luka Čehovin Zajc
-    orcid: 0000-0003-2823-272X
-    email: luka.cehovin@fri.uni-lj.si
-    affiliations: 1
 
 # List of affiliations with code (corresponding to author affiliations), name
 # and address. You can also use these affiliations to add text such as "Equal
 # contributions" as name (with no address).
 affiliations:
   - code:    1
-    name:    University of Ljubljana, Faculty of Computer and Information Science
-    address: Večna pot 113, 1000 Ljubljana
-
+    name:    Univ. Lille, CNRS, Centrale Lille, UMR 9189 CRIStAL
+    address: F-59000 Lille, France
+  - code:    2
+    name:    Univ. Lille, Inserm, CHU Lille, Institut Pasteur de Lille, U1011- EGID
+    address: F-59000 Lille, France
 
 # List of keywords (adding the programming language might be a good idea)
-keywords: Learning with noisy labels, deep learning, Python
+keywords: Julia, glucose, enterocytes, GLUT2, SGLT1, transporters, ODE
 
 # Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
 # You can get a DOI for your code from Zenodo, or an SWH identifier from
 # Software Heritage.
 #   see https://guides.github.com/activities/citable-code/
 code:
-  - url: https://github.com/KlemenVovk/noisy-labels
-  - doi:
-  - swh: swh:1:dir:22222955c66aeb7e379a16b45d208fcf3d64a11d
+  - url: https://gitlab.univ-lille.fr/cedric.lhoussaine/glucoseuptake_sglt1_glut2
+  - doi: 
+  - swh: swh:1:dir:f9aa17e5cfe4de39b8f5fa7d61f10979bd82a8ef
 
 # Data URL and DOI (optional if no data)
 data:
@@ -64,17 +66,29 @@ data:
 
 # Information about the original article that has been replicated
 replication:
- - cite: "WEI, Jiaheng, et al. Learning with noisy labels revisited: A study using real-world human annotations. arXiv preprint arXiv:2110.12088, 2021." # Full textual citation
- - bib:  noisylabels-benchmark # Bibtex key (if any) in your bibliography file
- - url:  https://openreview.net/pdf?id=TBWA6PLJZQm # URL to the PDF, try to link to a non-paywall version
- - doi:  https://doi.org/10.48550/arXiv.2110.12088 # Regular digital object identifier
+ - cite: Computational Modelling of Glucose Uptake by SGLT1 and Apical GLUT2 in the Enterocyte # Full textual citation
+ - bib:  afshar_computational_2021
+ - url:  https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2021.699152/full # URL to the PDF, try to link to a non-paywall version
+ - doi:  https://doi.org/10.3389/fphys.2021.699152 # Regular digital object identifier
 
 # Don't forget to surround abstract with double quotes
-abstract: "Learning with noisy labels (LNL) is a subfield of supervised machine learning investigating scenarios in which the training data contain errors. While most research has focused on synthetic noise, where labels are randomly corrupted, real-world noise from human annotation errors is more complex and less understood. Wei et al. (2022) introduced CIFAR-N, a dataset with human-labeled noise and claimed that real-world noise is fundamentally more challenging than synthetic noise. This study aims to reproduce their experiments on testing the characteristics of human-annotated label noise, memorization dynamics, and benchmarking of LNL methods. We successfully reproduce some of the claims but identify some quantitative discrepancies. Notably, our attempts to reproduce the reported benchmark reveal inconsistencies in the reported results. To address these issues, we develop a unified framework and propose a refined benchmarking protocol that ensures a fairer evaluation of LNL methods. Our findings confirm that real-world noise differs structurally from synthetic noise and is memorized more rapidly by deep networks. By open-sourcing our implementation, we provide a more reliable foundation for future research in LNL."
+abstract: "This article is the reproduction of the computational model of glucose absorption by
+the enterocyte by Afshar et al. in 2021 and more precisely, the reproduction made
+by the authors themselves in 2023. The enterocyte is the main component of the
+intestinal barrier, that is the cell type transporting glucose from digested food in the
+intestine to the blood. To this day, the model from Afshar et al. is the most complete
+description of enterocyte absorption, defined in terms of ordinary differential equations
+for the glucose, the ionic species and other physical properties of the cell.
+This paper presents a complete reengineering and rewriting of this model in a differ‐
+ent language, from CellML to Julia, with added comments and bibliography. We re‐
+produce each figure of the original paper and comment on their meaning. Our repro‐
+duction is freely available with the following link (https://gitlab.univ-lille.fr/cedric.lhoussaine/
+glucoseuptake_sglt1_glut2) and can be easily modified for reuse and modification of the
+model and its parameters."
 
 # Bibliography file (yours)
 bibliography: bibliography.bib
-
+  
 # Type of the article
 # Type can be:
 #  * Editorial
@@ -84,41 +98,41 @@ type: Replication
 
 # Scientific domain of the article (e.g. Computational Neuroscience)
 #  (one domain only & try to be not overly specific)
-domain: Machine Learning
+domain: Bioinformatics
 
 # Coding language (main one only if several)
-language: Python
+language: Julia
 
-
+  
 # To be filled by the author(s) after acceptance
 # -----------------------------------------------------------------------------
 
 # For example, the URL of the GitHub issue where review actually occured
-review:
-  - url: https://openreview.net/forum?id=GKZ2leags0
+review: 
+  - url: https://github.com/ReScience/submissions/issues/96
 
 contributors:
-  - name: Nicolas P. Rougier
-    orcid: 0000-0002-6972-589X
+  - name: Konrad Hinsen
+    orcid: 0000-0003-0330-9428
     role: editor
-  - name: anonymous
-    orcid:
+  - name: Gleb Pogudin
+    orcid: 0000-0002-5731-8242
     role: reviewer
-  - name: anonymous
-    orcid:
+  - name: Konrad Hinsen
+    orcid: 0000-0003-0330-9428
     role: reviewer
 
 # This information will be provided by the editor
 dates:
-  - received:  October 15, 2025
-  - accepted:  October 20, 2025
-  - published: January 28, 2026
+  - received:  October 21, 2025
+  - accepted:  June 5, 2026
+  - published: June 10, 2026
 
 # This information will be provided by the editor
 article:
-  - number: 2
-  - doi:    10.5281/zenodo.18401497
-  - url:    https://zenodo.org/record/18401497/files/article.pdf
+  - number: 3
+  - doi:    10.5281/zenodo.20613595 # DOI from Zenodo
+  - url:    https://zenodo.org/record/20613595/files/article.pdf
 
 # This information will be provided by the editor
 journal:
