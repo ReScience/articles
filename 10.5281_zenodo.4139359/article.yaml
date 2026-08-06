@@ -1,0 +1,121 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it should be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] The principal components of natural images"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+authors:
+  - name: Iain Davies
+    orcid: 0000-0002-5361-6285
+    email: id318@cam.c.uk
+    affiliations: 1,*
+
+  - name: Stephen Eglen
+    orcid: 0000-0001-8607-8025
+    email: sje30@cam.ac.uk
+    affiliations: 1
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Department of Applied Mathematics and Theoretical Physics, Cambridge University
+    address: Cambridge, UK
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: PCA, principal component analysis, MATLAB, V1, natural images, visual cortex
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/IainDaviesMaths/Reproduction-Hancock.git
+  - doi: 10.5281/zenodo.4139727
+  - swh: 
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: Hancock, P. et al, 1991 The Principal Components of Natural Images
+ - bib:  # Bibtex key (if any) in your bibliography file
+ - url:  http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=044DFF560FC2E801B579C2F23D268B44?doi=10.1.1.41.192&rep=rep1&type=pdf
+ - doi:  10.1088/0954-898X/3/1/008
+
+# Don't forget to surround abstract with double quotes
+abstract: "The visual cortex has long been the subject of study for computational
+           neuroscientists. Various neural network techniques have been applied
+           in attempts to recreate the receptive fields found experimentally in
+           visual cortex cells. In 1991 Hancock et al used an algorithm designed
+           by Sanger in 1989 to perform Principal Component Analysis on a series
+           of natural greyscale images, which replicated some features of 
+           receptive fields found in the V1 of cats, although they noted that 
+           many of the complex principal components were not found. Moreover,
+           they showed that Sanger's algorithm was able to find distinguishing 
+           features in text images as well as natural images, an important find in
+           the study of neural networks."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+  
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Computational Neuroscience
+
+# Coding language (main one only if several)
+language: Julia
+
+  
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review: 
+  - url: https://github.com/ReScience/submissions/issues/45
+
+contributors:
+  - name: Tiziano Zito
+    orcid: 0000-0002-7199-7456
+    role: editor
+  - name: Pietro Berkes
+    orcid: 
+    role: reviewer
+  - name: Christian Jarvers
+    orcid: 0000-0003-0062-9776
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  July 17, 2020
+  - accepted:  October 27, 2020
+  - published: October 28, 2020
+
+# This information will be provided by the editor
+article:
+  - number: 6
+  - doi:    10.5281/zenodo.4139359
+  - url:    https://zenodo.org/record/4139359/files/article.pdf 
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 6
+  - issue:  3
